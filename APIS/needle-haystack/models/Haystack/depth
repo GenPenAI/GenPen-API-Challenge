@@ -1,0 +1,13 @@
+{
+ "id":"764122690",
+ "name":"depth",
+ "example":"0f",
+ "required":"false",
+ "description":"This attribute is a variable named depth",
+ "minimum":"0",
+ "maximum":"10000000",
+ "pattern":"",
+ "value":"0f",
+ "type":"number",
+ "format":"float"
+}

@@ -1,0 +1,13 @@
+{
+ "id":"747242997",
+ "name":"weight",
+ "example":"0f",
+ "required":"false",
+ "description":"This attribute is a variable named weight",
+ "minimum":"0",
+ "maximum":"10000000",
+ "pattern":"",
+ "value":"0f",
+ "type":"number",
+ "format":"float"
+}

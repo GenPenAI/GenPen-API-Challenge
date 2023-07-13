@@ -1,0 +1,11 @@
+{
+ "id":"1562574296",
+ "name":"handles",
+ "example":"false",
+ "required":"false",
+ "description":"This attribute is a variable named handles",
+ "pattern":"",
+ "value":"false",
+ "type":"boolean",
+ "format":"boolean"
+}

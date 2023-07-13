@@ -1,0 +1,11 @@
+{
+ "id":"1746226648",
+ "name":"annotation",
+ "example":"",
+ "required":"false",
+ "description":"This attribute is a variable named annotation",
+ "pattern":"",
+ "value":"",
+ "type":"string",
+ "format":"string"
+}

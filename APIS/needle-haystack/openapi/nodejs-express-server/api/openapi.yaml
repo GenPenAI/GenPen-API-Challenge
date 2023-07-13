@@ -1,0 +1,1608 @@
+openapi: 3.0.2
+info:
+  license:
+    name: MIT
+  title: API Inspector
+  version: 1.0.0
+servers:
+- url: http://localhost:8080/openapi-jaxrs-server-1.0.0/api/v3
+paths:
+  /user:
+    post:
+      description: This can only be done by the logged in user.
+      operationId: createUser
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/User'
+          application/xml:
+            schema:
+              $ref: '#/components/schemas/User'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/User'
+        description: Created user object
+      responses:
+        default:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/User'
+          description: successful operation
+      summary: Create user
+      tags:
+      - user
+      x-eov-operation-handler: controllers/UserController
+  /user/createWithList:
+    post:
+      description: Creates list of users with given input array
+      operationId: createUsersWithListInput
+      requestBody:
+        content:
+          application/json:
+            schema:
+              items:
+                $ref: '#/components/schemas/User'
+              type: array
+      responses:
+        "200":
+          content:
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/User'
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+          description: Successful operation
+        default:
+          description: successful operation
+      summary: Creates list of users with given input array
+      tags:
+      - user
+      x-swagger-router-controller: ai.genpen.controllers.UserController
+      x-eov-operation-handler: controllers/UserController
+  /user/login:
+    get:
+      description: ""
+      operationId: loginUser
+      parameters:
+      - description: The user name for login
+        explode: true
+        in: query
+        name: username
+        required: false
+        schema:
+          type: string
+        style: form
+      - description: The password for login in clear text
+        explode: true
+        in: query
+        name: password
+        required: false
+        schema:
+          type: string
+        style: form
+      responses:
+        "200":
+          content:
+            application/xml:
+              schema:
+                type: string
+            application/json:
+              schema:
+                type: string
+          description: successful operation
+          headers:
+            X-Rate-Limit:
+              description: calls per hour allowed by the user
+              explode: false
+              schema:
+                format: int32
+                type: integer
+              style: simple
+            X-Expires-After:
+              description: date in UTC when token expires
+              explode: false
+              schema:
+                format: date-time
+                type: string
+              style: simple
+        "400":
+          description: Invalid username/password supplied
+      summary: Logs user into the system
+      tags:
+      - user
+      x-eov-operation-handler: controllers/UserController
+  /user/logout:
+    get:
+      description: ""
+      operationId: logoutUser
+      parameters: []
+      responses:
+        default:
+          description: successful operation
+      summary: Logs out current logged in user session
+      tags:
+      - user
+      x-eov-operation-handler: controllers/UserController
+  /user/{username}:
+    delete:
+      description: This can only be done by the logged in user.
+      operationId: deleteUser
+      parameters:
+      - description: The name that needs to be deleted
+        explode: false
+        in: path
+        name: username
+        required: true
+        schema:
+          type: string
+        style: simple
+      responses:
+        "400":
+          description: Invalid username supplied
+        "404":
+          description: User not found
+      summary: Delete user
+      tags:
+      - user
+      x-eov-operation-handler: controllers/UserController
+    get:
+      description: ""
+      operationId: getUserByName
+      parameters:
+      - description: 'The name that needs to be fetched. Use user1 for testing. '
+        explode: false
+        in: path
+        name: username
+        required: true
+        schema:
+          type: string
+        style: simple
+      responses:
+        "200":
+          content:
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/User'
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+          description: successful operation
+        "400":
+          description: Invalid username supplied
+        "404":
+          description: User not found
+      summary: Get user by user name
+      tags:
+      - user
+      x-eov-operation-handler: controllers/UserController
+    put:
+      description: This can only be done by the logged in user.
+      operationId: updateUser
+      parameters:
+      - description: name that need to be deleted
+        explode: false
+        in: path
+        name: username
+        required: true
+        schema:
+          type: string
+        style: simple
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/User'
+          application/xml:
+            schema:
+              $ref: '#/components/schemas/User'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/User'
+        description: Update an existent user in the store
+      responses:
+        default:
+          description: successful operation
+      summary: Update user
+      tags:
+      - user
+      x-swagger-router-controller: ai.genpen.controllers.UserController
+      x-eov-operation-handler: controllers/UserController
+  /gambler:
+    post:
+      description: This can only be done by the logged in user.
+      operationId: createGambler
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Gambler'
+          application/xml:
+            schema:
+              $ref: '#/components/schemas/Gambler'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Gambler'
+        description: Created gambler object
+      responses:
+        default:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Gambler'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/Gambler'
+          description: successful operation
+      summary: Create Gambler
+      tags:
+      - gambler
+      x-eov-operation-handler: controllers/GamblerController
+  /gambler/createWithList:
+    post:
+      description: Creates list of gambler with given input array
+      operationId: createGamblersWithListInput
+      requestBody:
+        content:
+          application/json:
+            schema:
+              items:
+                $ref: '#/components/schemas/Gambler'
+              type: array
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Gambler'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/Gambler'
+          description: Successful operation
+        default:
+          description: successful operation
+      summary: Creates list of Gambler with given input array
+      tags:
+      - gambler
+      x-swagger-router-controller: ai.genpen.controllers.GamblerController
+      x-eov-operation-handler: controllers/GamblerController
+  /gambler/{name}:
+    delete:
+      description: This can only be done by the logged in user.
+      operationId: deleteGambler
+      parameters:
+      - description: The gambler that needs to be deleted by name
+        explode: false
+        in: path
+        name: name
+        required: true
+        schema:
+          type: string
+        style: simple
+      responses:
+        "400":
+          description: Invalid Gambler variable supplied
+        "404":
+          description: Gambler not found
+      summary: Delete gambler
+      tags:
+      - gambler
+      x-eov-operation-handler: controllers/GamblerController
+    get:
+      description: ""
+      operationId: getGamblerByName
+      parameters:
+      - description: 'The name that needs to be fetched. Use gambler1 for testing. '
+        explode: false
+        in: path
+        name: name
+        required: true
+        schema:
+          format: string
+          type: string
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Gambler'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/Gambler'
+          description: successful operation
+        "400":
+          description: Invalid Gambler variable supplied
+        "404":
+          description: Gambler not found
+      summary: Get gambler by name
+      tags:
+      - gambler
+      x-eov-operation-handler: controllers/GamblerController
+    put:
+      description: This can only be done by the logged in user.
+      operationId: updateGambler
+      parameters:
+      - description: name of gambler that needs to be deleted
+        explode: false
+        in: path
+        name: name
+        required: true
+        schema:
+          format: string
+          type: string
+        style: simple
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Gambler'
+          application/xml:
+            schema:
+              $ref: '#/components/schemas/Gambler'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Gambler'
+        description: Update an existent gambler in the system
+      responses:
+        default:
+          description: successful operation
+      summary: Update gambler
+      tags:
+      - gambler
+      x-swagger-router-controller: ai.genpen.controllers.GamblerController
+      x-eov-operation-handler: controllers/GamblerController
+  /game:
+    post:
+      description: This can only be done by the logged in user.
+      operationId: createGame
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Game'
+          application/xml:
+            schema:
+              $ref: '#/components/schemas/Game'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Game'
+        description: Created game object
+      responses:
+        default:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Game'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/Game'
+          description: successful operation
+      summary: Create Game
+      tags:
+      - game
+      x-eov-operation-handler: controllers/GameController
+  /game/createWithList:
+    post:
+      description: Creates list of game with given input array
+      operationId: createGamesWithListInput
+      requestBody:
+        content:
+          application/json:
+            schema:
+              items:
+                $ref: '#/components/schemas/Game'
+              type: array
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Game'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/Game'
+          description: Successful operation
+        default:
+          description: successful operation
+      summary: Creates list of Game with given input array
+      tags:
+      - game
+      x-swagger-router-controller: ai.genpen.controllers.GameController
+      x-eov-operation-handler: controllers/GameController
+  /game/{name}:
+    delete:
+      description: This can only be done by the logged in user.
+      operationId: deleteGame
+      parameters:
+      - description: The game that needs to be deleted by name
+        explode: false
+        in: path
+        name: name
+        required: true
+        schema:
+          type: string
+        style: simple
+      responses:
+        "400":
+          description: Invalid Game variable supplied
+        "404":
+          description: Game not found
+      summary: Delete game
+      tags:
+      - game
+      x-eov-operation-handler: controllers/GameController
+    get:
+      description: ""
+      operationId: getGameByName
+      parameters:
+      - description: 'The name that needs to be fetched. Use game1 for testing. '
+        explode: false
+        in: path
+        name: name
+        required: true
+        schema:
+          format: string
+          type: string
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Game'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/Game'
+          description: successful operation
+        "400":
+          description: Invalid Game variable supplied
+        "404":
+          description: Game not found
+      summary: Get game by name
+      tags:
+      - game
+      x-eov-operation-handler: controllers/GameController
+    put:
+      description: This can only be done by the logged in user.
+      operationId: updateGame
+      parameters:
+      - description: name of game that needs to be deleted
+        explode: false
+        in: path
+        name: name
+        required: true
+        schema:
+          format: string
+          type: string
+        style: simple
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Game'
+          application/xml:
+            schema:
+              $ref: '#/components/schemas/Game'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Game'
+        description: Update an existent game in the system
+      responses:
+        default:
+          description: successful operation
+      summary: Update game
+      tags:
+      - game
+      x-swagger-router-controller: ai.genpen.controllers.GameController
+      x-eov-operation-handler: controllers/GameController
+  /sportingBet:
+    post:
+      description: This can only be done by the logged in user.
+      operationId: createSportingBet
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SportingBet'
+          application/xml:
+            schema:
+              $ref: '#/components/schemas/SportingBet'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/SportingBet'
+        description: Created sportingBet object
+      responses:
+        default:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SportingBet'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/SportingBet'
+          description: successful operation
+      summary: Create SportingBet
+      tags:
+      - sportingBet
+      x-eov-operation-handler: controllers/SportingBetController
+  /sportingBet/createWithList:
+    post:
+      description: Creates list of sportingBet with given input array
+      operationId: createSportingBetsWithListInput
+      requestBody:
+        content:
+          application/json:
+            schema:
+              items:
+                $ref: '#/components/schemas/SportingBet'
+              type: array
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SportingBet'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/SportingBet'
+          description: Successful operation
+        default:
+          description: successful operation
+      summary: Creates list of SportingBet with given input array
+      tags:
+      - sportingBet
+      x-swagger-router-controller: ai.genpen.controllers.SportingBetController
+      x-eov-operation-handler: controllers/SportingBetController
+  /sportingBet/{name}:
+    delete:
+      description: This can only be done by the logged in user.
+      operationId: deleteSportingBet
+      parameters:
+      - description: The sportingBet that needs to be deleted by name
+        explode: false
+        in: path
+        name: name
+        required: true
+        schema:
+          type: string
+        style: simple
+      responses:
+        "400":
+          description: Invalid SportingBet variable supplied
+        "404":
+          description: SportingBet not found
+      summary: Delete sportingBet
+      tags:
+      - sportingBet
+      x-eov-operation-handler: controllers/SportingBetController
+    get:
+      description: ""
+      operationId: getSportingBetByName
+      parameters:
+      - description: 'The name that needs to be fetched. Use sportingBet1 for testing. '
+        explode: false
+        in: path
+        name: name
+        required: true
+        schema:
+          format: string
+          type: string
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SportingBet'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/SportingBet'
+          description: successful operation
+        "400":
+          description: Invalid SportingBet variable supplied
+        "404":
+          description: SportingBet not found
+      summary: Get sportingBet by name
+      tags:
+      - sportingBet
+      x-eov-operation-handler: controllers/SportingBetController
+    put:
+      description: This can only be done by the logged in user.
+      operationId: updateSportingBet
+      parameters:
+      - description: name of sportingBet that needs to be deleted
+        explode: false
+        in: path
+        name: name
+        required: true
+        schema:
+          format: string
+          type: string
+        style: simple
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SportingBet'
+          application/xml:
+            schema:
+              $ref: '#/components/schemas/SportingBet'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/SportingBet'
+        description: Update an existent sportingBet in the system
+      responses:
+        default:
+          description: successful operation
+      summary: Update sportingBet
+      tags:
+      - sportingBet
+      x-swagger-router-controller: ai.genpen.controllers.SportingBetController
+      x-eov-operation-handler: controllers/SportingBetController
+  /bet:
+    post:
+      description: This can only be done by the logged in user.
+      operationId: createBet
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Bet'
+          application/xml:
+            schema:
+              $ref: '#/components/schemas/Bet'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Bet'
+        description: Created bet object
+      responses:
+        default:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Bet'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/Bet'
+          description: successful operation
+      summary: Create Bet
+      tags:
+      - bet
+      x-eov-operation-handler: controllers/BetController
+  /bet/createWithList:
+    post:
+      description: Creates list of bet with given input array
+      operationId: createBetsWithListInput
+      requestBody:
+        content:
+          application/json:
+            schema:
+              items:
+                $ref: '#/components/schemas/Bet'
+              type: array
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Bet'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/Bet'
+          description: Successful operation
+        default:
+          description: successful operation
+      summary: Creates list of Bet with given input array
+      tags:
+      - bet
+      x-swagger-router-controller: ai.genpen.controllers.BetController
+      x-eov-operation-handler: controllers/BetController
+  /bet/{name}:
+    delete:
+      description: This can only be done by the logged in user.
+      operationId: deleteBet
+      parameters:
+      - description: The bet that needs to be deleted by name
+        explode: false
+        in: path
+        name: name
+        required: true
+        schema:
+          type: string
+        style: simple
+      responses:
+        "400":
+          description: Invalid Bet variable supplied
+        "404":
+          description: Bet not found
+      summary: Delete bet
+      tags:
+      - bet
+      x-eov-operation-handler: controllers/BetController
+    get:
+      description: ""
+      operationId: getBetByName
+      parameters:
+      - description: 'The name that needs to be fetched. Use bet1 for testing. '
+        explode: false
+        in: path
+        name: name
+        required: true
+        schema:
+          format: string
+          type: string
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Bet'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/Bet'
+          description: successful operation
+        "400":
+          description: Invalid Bet variable supplied
+        "404":
+          description: Bet not found
+      summary: Get bet by name
+      tags:
+      - bet
+      x-eov-operation-handler: controllers/BetController
+    put:
+      description: This can only be done by the logged in user.
+      operationId: updateBet
+      parameters:
+      - description: name of bet that needs to be deleted
+        explode: false
+        in: path
+        name: name
+        required: true
+        schema:
+          format: string
+          type: string
+        style: simple
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Bet'
+          application/xml:
+            schema:
+              $ref: '#/components/schemas/Bet'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Bet'
+        description: Update an existent bet in the system
+      responses:
+        default:
+          description: successful operation
+      summary: Update bet
+      tags:
+      - bet
+      x-swagger-router-controller: ai.genpen.controllers.BetController
+      x-eov-operation-handler: controllers/BetController
+  /footballGame:
+    post:
+      description: This can only be done by the logged in user.
+      operationId: createFootballGame
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/FootballGame'
+          application/xml:
+            schema:
+              $ref: '#/components/schemas/FootballGame'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/FootballGame'
+        description: Created footballGame object
+      responses:
+        default:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/FootballGame'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/FootballGame'
+          description: successful operation
+      summary: Create FootballGame
+      tags:
+      - footballGame
+      x-eov-operation-handler: controllers/FootballGameController
+  /footballGame/createWithList:
+    post:
+      description: Creates list of footballGame with given input array
+      operationId: createFootballGamesWithListInput
+      requestBody:
+        content:
+          application/json:
+            schema:
+              items:
+                $ref: '#/components/schemas/FootballGame'
+              type: array
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/FootballGame'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/FootballGame'
+          description: Successful operation
+        default:
+          description: successful operation
+      summary: Creates list of FootballGame with given input array
+      tags:
+      - footballGame
+      x-swagger-router-controller: ai.genpen.controllers.FootballGameController
+      x-eov-operation-handler: controllers/FootballGameController
+  /footballGame/{name}:
+    delete:
+      description: This can only be done by the logged in user.
+      operationId: deleteFootballGame
+      parameters:
+      - description: The footballGame that needs to be deleted by name
+        explode: false
+        in: path
+        name: name
+        required: true
+        schema:
+          type: string
+        style: simple
+      responses:
+        "400":
+          description: Invalid FootballGame variable supplied
+        "404":
+          description: FootballGame not found
+      summary: Delete footballGame
+      tags:
+      - footballGame
+      x-eov-operation-handler: controllers/FootballGameController
+    get:
+      description: ""
+      operationId: getFootballGameByName
+      parameters:
+      - description: 'The name that needs to be fetched. Use footballGame1 for testing. '
+        explode: false
+        in: path
+        name: name
+        required: true
+        schema:
+          format: string
+          type: string
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/FootballGame'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/FootballGame'
+          description: successful operation
+        "400":
+          description: Invalid FootballGame variable supplied
+        "404":
+          description: FootballGame not found
+      summary: Get footballGame by name
+      tags:
+      - footballGame
+      x-eov-operation-handler: controllers/FootballGameController
+    put:
+      description: This can only be done by the logged in user.
+      operationId: updateFootballGame
+      parameters:
+      - description: name of footballGame that needs to be deleted
+        explode: false
+        in: path
+        name: name
+        required: true
+        schema:
+          format: string
+          type: string
+        style: simple
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/FootballGame'
+          application/xml:
+            schema:
+              $ref: '#/components/schemas/FootballGame'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/FootballGame'
+        description: Update an existent footballGame in the system
+      responses:
+        default:
+          description: successful operation
+      summary: Update footballGame
+      tags:
+      - footballGame
+      x-swagger-router-controller: ai.genpen.controllers.FootballGameController
+      x-eov-operation-handler: controllers/FootballGameController
+components:
+  schemas:
+    User:
+      example:
+        firstName: John
+        lastName: James
+        password: 123456789abC
+        userStatus: 1
+        phone: "14168785282"
+        id: 10
+        email: john@email.com
+        username: theUser
+      properties:
+        id:
+          example: 10
+          format: int64
+          type: integer
+        username:
+          example: theUser
+          type: string
+        firstName:
+          example: John
+          type: string
+        lastName:
+          example: James
+          type: string
+        email:
+          example: john@email.com
+          type: string
+        password:
+          example: 123456789abC
+          type: string
+        phone:
+          example: "14168785282"
+          type: string
+        userStatus:
+          description: User Status
+          example: 1
+          format: int32
+          type: integer
+      type: object
+      xml:
+        name: user
+      x-swagger-router-model: ai.genpen.models.User
+    Error:
+      properties:
+        code:
+          format: int32
+          type: integer
+        message:
+          type: string
+      required:
+      - code
+      - message
+      type: object
+      xml:
+        name: error
+    Gambler:
+      example:
+        casinoVisits: 0
+        gPO-309: 3
+        gPO-019: "13"
+        amountWagered: 0.0
+        highRoller: false
+        depositLimit: 0
+        debtAccumulated: -1803530559
+        luckyStreak: false
+        loyaltyPoints: 0
+        prizesWon: 0
+        betsLost: 0
+        riskTolerance: riskTolerance
+        bettingStrategy: bettingStrategy
+        winningsLost: 0.0
+        gamblingFrequency: 0
+        winningPercentage: 0.0
+        creditRating: creditRating
+      properties:
+        loyaltyPoints:
+          default: 0
+          description: This attribute is a variable named:Loyalty Points
+          example: 0
+          format: int64
+          maximum: 2147483647
+          minimum: -2147483648
+          type: integer
+        gamblingFrequency:
+          default: 0
+          description: This attribute is a variable named:Gambling Frequency
+          example: 0
+          format: int64
+          maximum: 2147483647
+          minimum: -2147483648
+          type: integer
+        amountWagered:
+          default: 0.0
+          description: This attribute is a variable named:Amount Wagered
+          example: 0.0
+          format: int32
+          type: number
+        riskTolerance:
+          description: This attribute is a variable named:Risk Tolerance
+          format: string
+          type: string
+          example: null
+        bettingStrategy:
+          description: This attribute is a variable named:Betting Strategy
+          format: string
+          type: string
+          example: null
+        winningPercentage:
+          default: 0.0
+          description: This attribute is a variable named:Winning Percentage
+          example: 0.0
+          format: int32
+          type: number
+        gPO-309:
+          default: 5908
+          example: 3
+          format: int64
+          maximum: 2147483647
+          minimum: -2147483648
+          type: integer
+        casinoVisits:
+          default: 0
+          description: This attribute is a variable named:Casino Visits
+          example: 0
+          format: int64
+          maximum: 2147483647
+          minimum: -2147483648
+          type: integer
+        creditRating:
+          description: This attribute is a variable named:Credit Rating
+          format: string
+          type: string
+          example: null
+        gPO-019:
+          default: "5909"
+          example: "13"
+          format: string
+          type: string
+        debtAccumulated:
+          description: This attribute is a variable named:Debt Accumulated
+          format: int64
+          maximum: 2147483647
+          minimum: -2147483648
+          type: integer
+        prizesWon:
+          default: 0
+          description: This attribute is a variable named:Prizes Won
+          example: 0
+          format: int64
+          maximum: 2147483647
+          minimum: -2147483648
+          type: integer
+        depositLimit:
+          default: 0
+          description: This attribute is a variable named:Deposit Limit
+          example: 0
+          format: int64
+          maximum: 2147483647
+          minimum: -2147483648
+          type: integer
+        luckyStreak:
+          default: false
+          description: This attribute is a variable named:Lucky Streak
+          example: false
+          format: boolean
+          type: boolean
+        highRoller:
+          default: false
+          description: This attribute is a variable named:High Roller
+          example: false
+          format: boolean
+          type: boolean
+        winningsLost:
+          default: 0.0
+          description: This attribute is a variable named:Winnings Lost
+          example: 0.0
+          format: int32
+          type: number
+        betsLost:
+          default: 0
+          description: This attribute is a variable named:Bets Lost
+          example: 0
+          format: int64
+          maximum: 2147483647
+          minimum: -2147483648
+          type: integer
+      required:
+      - gPO-019
+      - gPO-309
+      type: object
+      xml:
+        name: gambler
+      x-swagger-router-model: ai.genpen.models.Gambler
+    Game:
+      example:
+        achievements: false
+        year: 0
+        availableLanguages: availableLanguages
+        rating: 0
+        controllerSupport: false
+        gPO-0e9: 3
+        platforms: platforms
+        numberOfPlayers: 0
+        price: 0.8008281904610115
+        genre: genre
+        publisher: publisher
+        gPO-155: "7"
+        developer: developer
+        gameLength: 0
+        multiplayer: false
+      properties:
+        publisher:
+          description: This attribute is a variable named:Publisher
+          format: string
+          type: string
+          example: null
+        price:
+          description: This attribute is a variable named:Price
+          format: int32
+          type: number
+        achievements:
+          default: false
+          description: This attribute is a variable named:Achievements
+          example: false
+          format: boolean
+          type: boolean
+        availableLanguages:
+          description: This attribute is a variable named:AvailableLanguages
+          format: string
+          type: string
+          example: null
+        rating:
+          default: 0
+          description: This attribute is a variable named:Rating
+          example: 0
+          format: int64
+          maximum: 2147483647
+          minimum: -2147483648
+          type: integer
+        controllerSupport:
+          default: false
+          description: This attribute is a variable named:ControllerSupport
+          example: false
+          format: boolean
+          type: boolean
+        gameLength:
+          default: 0
+          description: This attribute is a variable named:GameLength
+          example: 0
+          format: int64
+          maximum: 2147483647
+          minimum: -2147483648
+          type: integer
+        genre:
+          description: This attribute is a variable named:Genre
+          format: string
+          type: string
+          example: null
+        platforms:
+          description: This attribute is a variable named:Platforms
+          format: string
+          type: string
+          example: null
+        gPO-0e9:
+          default: 14064
+          example: 3
+          format: int64
+          maximum: 2147483647
+          minimum: -2147483648
+          type: integer
+        multiplayer:
+          default: false
+          description: This attribute is a variable named:Multiplayer
+          example: false
+          format: boolean
+          type: boolean
+        gPO-155:
+          default: "14065"
+          example: "7"
+          format: string
+          type: string
+        developer:
+          description: This attribute is a variable named:Developer
+          format: string
+          type: string
+          example: null
+        year:
+          default: 0
+          description: This attribute is a variable named:Year
+          example: 0
+          format: int64
+          maximum: 2147483647
+          minimum: -2147483648
+          type: integer
+        numberOfPlayers:
+          default: 0
+          description: This attribute is a variable named:NumberOfPlayers
+          example: 0
+          format: int64
+          maximum: 2147483647
+          minimum: -2147483648
+          type: integer
+      required:
+      - gPO-0e9
+      - gPO-155
+      type: object
+      xml:
+        name: game
+      x-swagger-router-model: ai.genpen.models.Game
+    SportingBet:
+      example:
+        punterName: punterName
+        winAmount: 0.0
+        totalBets: 0
+        depositLimit: 0
+        withdrawalLimit: 0
+        eventType: eventType
+        riskRating: 0
+        stakeAmount: 0.0
+        betPlaced: false
+        pointsScored: 441289069
+        betSettled: false
+        gPO-3d9: "88"
+        odds: 0.8008281904610115
+        winningOutcome: false
+        gPO-c0a: 110
+        accountBalance: 0
+      properties:
+        accountBalance:
+          default: 0
+          description: This attribute is a variable named:Account Balance
+          example: 0
+          format: int64
+          maximum: 2147483647
+          minimum: -2147483648
+          type: integer
+        riskRating:
+          default: 0
+          description: This attribute is a variable named:Risk Rating
+          example: 0
+          format: int64
+          maximum: 2147483647
+          minimum: -2147483648
+          type: integer
+        odds:
+          description: This attribute is a variable named:Odds
+          format: int32
+          type: number
+        totalBets:
+          default: 0
+          description: This attribute is a variable named:Total Bets
+          example: 0
+          format: int64
+          maximum: 2147483647
+          minimum: -2147483648
+          type: integer
+        stakeAmount:
+          default: 0.0
+          description: This attribute is a variable named:Stake Amount
+          example: 0.0
+          format: int32
+          type: number
+        pointsScored:
+          description: This attribute is a variable named:Points Scored
+          format: int64
+          maximum: 2147483647
+          minimum: -2147483648
+          type: integer
+        punterName:
+          description: This attribute is a variable named:Punter Name
+          format: string
+          type: string
+          example: null
+        gPO-c0a:
+          default: 10318
+          example: 110
+          format: int64
+          maximum: 2147483647
+          minimum: -2147483648
+          type: integer
+        betSettled:
+          default: false
+          description: This attribute is a variable named:Bet Settled
+          example: false
+          format: boolean
+          type: boolean
+        gPO-3d9:
+          default: "10319"
+          example: "88"
+          format: string
+          type: string
+        withdrawalLimit:
+          default: 0
+          description: This attribute is a variable named:Withdrawal Limit
+          example: 0
+          format: int64
+          maximum: 2147483647
+          minimum: -2147483648
+          type: integer
+        eventType:
+          description: This attribute is a variable named:Event Type
+          format: string
+          type: string
+          example: null
+        depositLimit:
+          default: 0
+          description: This attribute is a variable named:Deposit Limit
+          example: 0
+          format: int64
+          maximum: 2147483647
+          minimum: -2147483648
+          type: integer
+        betPlaced:
+          default: false
+          description: This attribute is a variable named:Bet Placed
+          example: false
+          format: boolean
+          type: boolean
+        winningOutcome:
+          default: false
+          description: This attribute is a variable named:Winning Outcome
+          example: false
+          format: boolean
+          type: boolean
+        winAmount:
+          default: 0.0
+          description: This attribute is a variable named:Win Amount
+          example: 0.0
+          format: int32
+          type: number
+      required:
+      - gPO-3d9
+      - gPO-c0a
+      type: object
+      xml:
+        name: sportingBet
+      x-swagger-router-model: ai.genpen.models.SportingBet
+    Bet:
+      example:
+        winningPlayer: winningPlayer
+        losingPlayer: losingPlayer
+        maximumBet: 0
+        payoutMultiplier: 0.8008281904610115
+        gPO-b23: 5
+        minimumBet: 0
+        houseEdge: 5.962133916683182
+        typeOfBet: typeOfBet
+        numberOfPlayers: 0
+        moneyLineBet: 1.4658129805029452
+        betSize: 0
+        pointSpreadBet: 0.0
+        commisionRate%: 6.027456183070403
+        stakeAmounts: 0.0
+        gPO-373: "35"
+        isResolved: false
+      properties:
+        payoutMultiplier:
+          description: This attribute is a variable named:Payout Multiplier
+          format: int32
+          type: number
+        commisionRate%:
+          description: This attribute is a variable named:Commision Rate%
+          format: int32
+          type: number
+        minimumBet:
+          default: 0
+          description: This attribute is a variable named:Minimum Bet
+          example: 0
+          format: int64
+          maximum: 2147483647
+          minimum: -2147483648
+          type: integer
+        typeOfBet:
+          description: This attribute is a variable named:Type of Bet
+          format: string
+          type: string
+          example: null
+        numberOfPlayers:
+          default: 0
+          description: This attribute is a variable named:Number of players
+          example: 0
+          format: int64
+          maximum: 2147483647
+          minimum: -2147483648
+          type: integer
+        losingPlayer:
+          description: This attribute is a variable named:Losing Player
+          format: string
+          type: string
+          example: null
+        moneyLineBet:
+          format: int32
+          type: number
+          example: null
+        isResolved:
+          default: false
+          description: This attribute is a variable named:Is Resolved
+          example: false
+          format: boolean
+          type: boolean
+        houseEdge:
+          description: This attribute is a variable named:House Edge
+          format: int32
+          type: number
+        pointSpreadBet:
+          default: 0.0
+          example: 0.0
+          format: int32
+          type: number
+        maximumBet:
+          default: 0
+          description: This attribute is a variable named:Maximum Bet
+          example: 0
+          format: int64
+          maximum: 2147483647
+          minimum: -2147483648
+          type: integer
+        winningPlayer:
+          description: This attribute is a variable named:Winning Player
+          format: string
+          type: string
+          example: null
+        gPO-b23:
+          default: 2654
+          example: 5
+          format: int64
+          maximum: 2147483647
+          minimum: -2147483648
+          type: integer
+        gPO-373:
+          default: "2655"
+          example: "35"
+          format: string
+          type: string
+        stakeAmounts:
+          default: 0.0
+          description: This attribute is a variable named:Stake Amounts
+          example: 0.0
+          format: int32
+          type: number
+        betSize:
+          default: 0
+          description: This attribute is a variable named:Bet Size
+          example: 0
+          format: int64
+          maximum: 2147483647
+          minimum: -2147483648
+          type: integer
+      required:
+      - gPO-373
+      - gPO-b23
+      type: object
+      xml:
+        name: bet
+      x-swagger-router-model: ai.genpen.models.Bet
+    FootballGame:
+      example:
+        kickoff: false
+        receiver: receiver
+        teams: teams
+        passYards: 0
+        quarterback: quarterback
+        score: 0
+        gPO-7a7: "110"
+        halftime: false
+        fumbleRecovery: false
+        interception: false
+        gPO-300: 35
+        weather: weather
+        stadium: stadium
+        overtime: false
+        attendance: 0
+      properties:
+        quarterback:
+          description: This attribute is a variable named:Quarterback
+          format: string
+          type: string
+          example: null
+        fumbleRecovery:
+          default: false
+          description: This attribute is a variable named:FumbleRecovery
+          example: false
+          format: boolean
+          type: boolean
+        attendance:
+          default: 0
+          description: This attribute is a variable named:Attendance
+          example: 0
+          format: int64
+          maximum: 2147483647
+          minimum: -2147483648
+          type: integer
+        stadium:
+          description: This attribute is a variable named:Stadium
+          format: string
+          type: string
+          example: null
+        score:
+          default: 0
+          description: This attribute is a variable named:Score
+          example: 0
+          format: int64
+          maximum: 2147483647
+          minimum: -2147483648
+          type: integer
+        halftime:
+          default: false
+          description: This attribute is a variable named:Halftime
+          example: false
+          format: boolean
+          type: boolean
+        kickoff:
+          default: false
+          description: This attribute is a variable named:Kickoff
+          example: false
+          format: boolean
+          type: boolean
+        passYards:
+          default: 0
+          description: This attribute is a variable named:PassYards
+          example: 0
+          format: int64
+          maximum: 2147483647
+          minimum: -2147483648
+          type: integer
+        gPO-300:
+          default: 19396
+          example: 35
+          format: int64
+          maximum: 2147483647
+          minimum: -2147483648
+          type: integer
+        receiver:
+          description: This attribute is a variable named:Receiver
+          format: string
+          type: string
+          example: null
+        gPO-7a7:
+          default: "19397"
+          example: "110"
+          format: string
+          type: string
+        teams:
+          description: This attribute is a variable named:Teams
+          format: string
+          type: string
+          example: null
+        interception:
+          default: false
+          description: This attribute is a variable named:Interception
+          example: false
+          format: boolean
+          type: boolean
+        overtime:
+          default: false
+          description: This attribute is a variable named:Overtime
+          example: false
+          format: boolean
+          type: boolean
+        weather:
+          description: This attribute is a variable named:Weather
+          format: string
+          type: string
+          example: null
+      required:
+      - gPO-300
+      - gPO-7a7
+      type: object
+      xml:
+        name: footballGame
+      x-swagger-router-model: ai.genpen.models.FootballGame

@@ -1,0 +1,11 @@
+{
+ "id":"232355863",
+ "name":"date_created",
+ "example":"01-01-1968",
+ "required":"false",
+ "description":"This attribute is a variable named date_created",
+ "pattern":"",
+ "value":"01-01-1968",
+ "type":"string",
+ "format":"date"
+}

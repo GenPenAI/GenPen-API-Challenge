@@ -1,0 +1,14 @@
+.gitignore
+api.ts
+api/apis.ts
+api/recordApi.ts
+api/satalitteApi.ts
+api/satelliteImageApi.ts
+api/userApi.ts
+git_push.sh
+model/modelError.ts
+model/models.ts
+model/record.ts
+model/satalitte.ts
+model/satelliteImage.ts
+model/user.ts

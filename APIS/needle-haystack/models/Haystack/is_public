@@ -1,0 +1,11 @@
+{
+ "id":"1820193157",
+ "name":"is_public",
+ "example":"false",
+ "required":"false",
+ "description":"This attribute is a variable named is_public",
+ "pattern":"",
+ "value":"false",
+ "type":"boolean",
+ "format":"boolean"
+}

@@ -1,0 +1,7 @@
+.gitignore
+git_push.sh
+project.clj
+src/api_inspector/api/user.clj
+src/api_inspector/core.clj
+src/api_inspector/specs/error.clj
+src/api_inspector/specs/user.clj

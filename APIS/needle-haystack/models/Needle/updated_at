@@ -1,0 +1,11 @@
+{
+ "id":"319289366",
+ "name":"updated_at",
+ "example":"01-01-1968",
+ "required":"false",
+ "description":"This attribute is a variable named updated_at",
+ "pattern":"",
+ "value":"01-01-1968",
+ "type":"string",
+ "format":"date"
+}

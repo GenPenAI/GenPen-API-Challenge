@@ -1,0 +1,13 @@
+{
+ "id":"1978090077",
+ "name":"time_spent",
+ "example":"0f",
+ "required":"false",
+ "description":"This attribute is a variable named time_spent",
+ "minimum":"0",
+ "maximum":"10000000",
+ "pattern":"",
+ "value":"0f",
+ "type":"number",
+ "format":"float"
+}

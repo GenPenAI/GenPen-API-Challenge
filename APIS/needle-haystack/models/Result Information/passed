@@ -1,0 +1,11 @@
+{
+ "id":"146464119",
+ "name":"passed",
+ "example":"false",
+ "required":"false",
+ "description":"This attribute is a variable named passed",
+ "pattern":"",
+ "value":"false",
+ "type":"boolean",
+ "format":"boolean"
+}

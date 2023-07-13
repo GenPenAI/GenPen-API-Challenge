@@ -1,0 +1,14 @@
+.gitignore
+.openapi-generator-ignore
+git_push.sh
+openapiclient-1.0.0-1.rockspec
+openapiclient/api/ddd_api.lua
+openapiclient/api/user_api.lua
+openapiclient/model/ddd.lua
+openapiclient/model/error.lua
+openapiclient/model/user.lua
+spec/ddd_api_spec.lua
+spec/ddd_spec.lua
+spec/error_spec.lua
+spec/user_api_spec.lua
+spec/user_spec.lua

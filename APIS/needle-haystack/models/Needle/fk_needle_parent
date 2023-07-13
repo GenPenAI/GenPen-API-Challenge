@@ -1,0 +1,13 @@
+{
+ "id":"380805777",
+ "name":"fk_needle_parent",
+ "example":"0",
+ "required":"false",
+ "description":"This attribute is a variable named fk_needle_parent",
+ "minimum":"0",
+ "maximum":"10000000",
+ "pattern":"",
+ "value":"0",
+ "type":"integer",
+ "format":"integer"
+}

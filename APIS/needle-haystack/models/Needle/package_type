@@ -1,0 +1,11 @@
+{
+ "id":"1063866089",
+ "name":"package_type",
+ "example":"",
+ "required":"false",
+ "description":"This attribute is a variable named package_type",
+ "pattern":"",
+ "value":"",
+ "type":"string",
+ "format":"string"
+}

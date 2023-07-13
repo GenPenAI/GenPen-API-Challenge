@@ -1,0 +1,1351 @@
+openapi: 3.0.2
+info:
+  license:
+    name: MIT
+  title: API Inspector
+  version: 1.0.0
+servers:
+- url: http://localhost:8080/openapi-jaxrs-server-1.0.0/api/v3
+paths:
+  /bullion:
+    post:
+      description: This can only be done by the logged in user.
+      operationId: create_bullion
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Bullion'
+          application/xml:
+            schema:
+              $ref: '#/components/schemas/Bullion'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Bullion'
+        description: Created bullion object
+      responses:
+        default:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Bullion'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/Bullion'
+          description: successful operation
+      summary: Create Bullion
+      tags:
+      - bullion
+      x-openapi-router-controller: openapi_server.controllers.bullion_controller
+  /bullion/createWithList:
+    post:
+      description: Creates list of bullion with given input array
+      operationId: create_bullions_with_list_input
+      requestBody:
+        content:
+          application/json:
+            schema:
+              items:
+                $ref: '#/components/schemas/Bullion'
+              type: array
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Bullion'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/Bullion'
+          description: Successful operation
+        default:
+          description: successful operation
+      summary: Creates list of Bullion with given input array
+      tags:
+      - bullion
+      x-swagger-router-controller: ai.genpen.controllers.BullionController
+      x-openapi-router-controller: openapi_server.controllers.bullion_controller
+  /bullion/{name}:
+    delete:
+      description: This can only be done by the logged in user.
+      operationId: delete_bullion
+      parameters:
+      - description: The bullion that needs to be deleted by name
+        explode: false
+        in: path
+        name: name
+        required: true
+        schema:
+          type: string
+        style: simple
+      responses:
+        "400":
+          description: Invalid Bullion variable supplied
+        "404":
+          description: Bullion not found
+      summary: Delete bullion
+      tags:
+      - bullion
+      x-openapi-router-controller: openapi_server.controllers.bullion_controller
+    get:
+      description: ""
+      operationId: get_bullion_by_name
+      parameters:
+      - description: 'The name that needs to be fetched. Use bullion1 for testing. '
+        explode: false
+        in: path
+        name: name
+        required: true
+        schema:
+          format: string
+          type: string
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Bullion'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/Bullion'
+          description: successful operation
+        "400":
+          description: Invalid Bullion variable supplied
+        "404":
+          description: Bullion not found
+      summary: Get bullion by name
+      tags:
+      - bullion
+      x-openapi-router-controller: openapi_server.controllers.bullion_controller
+    put:
+      description: This can only be done by the logged in user.
+      operationId: update_bullion
+      parameters:
+      - description: name of bullion that needs to be deleted
+        explode: false
+        in: path
+        name: name
+        required: true
+        schema:
+          format: string
+          type: string
+        style: simple
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Bullion'
+          application/xml:
+            schema:
+              $ref: '#/components/schemas/Bullion'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Bullion'
+        description: Update an existent bullion in the system
+      responses:
+        default:
+          description: successful operation
+      summary: Update bullion
+      tags:
+      - bullion
+      x-swagger-router-controller: ai.genpen.controllers.BullionController
+      x-openapi-router-controller: openapi_server.controllers.bullion_controller
+  /client:
+    post:
+      description: This can only be done by the logged in user.
+      operationId: create_client
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Client'
+          application/xml:
+            schema:
+              $ref: '#/components/schemas/Client'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Client'
+        description: Created client object
+      responses:
+        default:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Client'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/Client'
+          description: successful operation
+      summary: Create Client
+      tags:
+      - client
+      x-openapi-router-controller: openapi_server.controllers.client_controller
+  /client/createWithList:
+    post:
+      description: Creates list of client with given input array
+      operationId: create_clients_with_list_input
+      requestBody:
+        content:
+          application/json:
+            schema:
+              items:
+                $ref: '#/components/schemas/Client'
+              type: array
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Client'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/Client'
+          description: Successful operation
+        default:
+          description: successful operation
+      summary: Creates list of Client with given input array
+      tags:
+      - client
+      x-swagger-router-controller: ai.genpen.controllers.ClientController
+      x-openapi-router-controller: openapi_server.controllers.client_controller
+  /client/{name}:
+    delete:
+      description: This can only be done by the logged in user.
+      operationId: delete_client
+      parameters:
+      - description: The client that needs to be deleted by name
+        explode: false
+        in: path
+        name: name
+        required: true
+        schema:
+          type: string
+        style: simple
+      responses:
+        "400":
+          description: Invalid Client variable supplied
+        "404":
+          description: Client not found
+      summary: Delete client
+      tags:
+      - client
+      x-openapi-router-controller: openapi_server.controllers.client_controller
+    get:
+      description: ""
+      operationId: get_client_by_name
+      parameters:
+      - description: 'The name that needs to be fetched. Use client1 for testing. '
+        explode: false
+        in: path
+        name: name
+        required: true
+        schema:
+          format: string
+          type: string
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Client'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/Client'
+          description: successful operation
+        "400":
+          description: Invalid Client variable supplied
+        "404":
+          description: Client not found
+      summary: Get client by name
+      tags:
+      - client
+      x-openapi-router-controller: openapi_server.controllers.client_controller
+    put:
+      description: This can only be done by the logged in user.
+      operationId: update_client
+      parameters:
+      - description: name of client that needs to be deleted
+        explode: false
+        in: path
+        name: name
+        required: true
+        schema:
+          format: string
+          type: string
+        style: simple
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Client'
+          application/xml:
+            schema:
+              $ref: '#/components/schemas/Client'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Client'
+        description: Update an existent client in the system
+      responses:
+        default:
+          description: successful operation
+      summary: Update client
+      tags:
+      - client
+      x-swagger-router-controller: ai.genpen.controllers.ClientController
+      x-openapi-router-controller: openapi_server.controllers.client_controller
+  /metalRefinery:
+    post:
+      description: This can only be done by the logged in user.
+      operationId: create_metal_refinery
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/MetalRefinery'
+          application/xml:
+            schema:
+              $ref: '#/components/schemas/MetalRefinery'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/MetalRefinery'
+        description: Created metalRefinery object
+      responses:
+        default:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MetalRefinery'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/MetalRefinery'
+          description: successful operation
+      summary: Create MetalRefinery
+      tags:
+      - metalRefinery
+      x-openapi-router-controller: openapi_server.controllers.metal_refinery_controller
+  /metalRefinery/createWithList:
+    post:
+      description: Creates list of metalRefinery with given input array
+      operationId: create_metal_refinerys_with_list_input
+      requestBody:
+        content:
+          application/json:
+            schema:
+              items:
+                $ref: '#/components/schemas/MetalRefinery'
+              type: array
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MetalRefinery'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/MetalRefinery'
+          description: Successful operation
+        default:
+          description: successful operation
+      summary: Creates list of MetalRefinery with given input array
+      tags:
+      - metalRefinery
+      x-swagger-router-controller: ai.genpen.controllers.MetalRefineryController
+      x-openapi-router-controller: openapi_server.controllers.metal_refinery_controller
+  /metalRefinery/{name}:
+    delete:
+      description: This can only be done by the logged in user.
+      operationId: delete_metal_refinery
+      parameters:
+      - description: The metalRefinery that needs to be deleted by name
+        explode: false
+        in: path
+        name: name
+        required: true
+        schema:
+          type: string
+        style: simple
+      responses:
+        "400":
+          description: Invalid MetalRefinery variable supplied
+        "404":
+          description: MetalRefinery not found
+      summary: Delete metalRefinery
+      tags:
+      - metalRefinery
+      x-openapi-router-controller: openapi_server.controllers.metal_refinery_controller
+    get:
+      description: ""
+      operationId: get_metal_refinery_by_name
+      parameters:
+      - description: 'The name that needs to be fetched. Use metalRefinery1 for testing. '
+        explode: false
+        in: path
+        name: name
+        required: true
+        schema:
+          format: string
+          type: string
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MetalRefinery'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/MetalRefinery'
+          description: successful operation
+        "400":
+          description: Invalid MetalRefinery variable supplied
+        "404":
+          description: MetalRefinery not found
+      summary: Get metalRefinery by name
+      tags:
+      - metalRefinery
+      x-openapi-router-controller: openapi_server.controllers.metal_refinery_controller
+    put:
+      description: This can only be done by the logged in user.
+      operationId: update_metal_refinery
+      parameters:
+      - description: name of metalRefinery that needs to be deleted
+        explode: false
+        in: path
+        name: name
+        required: true
+        schema:
+          format: string
+          type: string
+        style: simple
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/MetalRefinery'
+          application/xml:
+            schema:
+              $ref: '#/components/schemas/MetalRefinery'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/MetalRefinery'
+        description: Update an existent metalRefinery in the system
+      responses:
+        default:
+          description: successful operation
+      summary: Update metalRefinery
+      tags:
+      - metalRefinery
+      x-swagger-router-controller: ai.genpen.controllers.MetalRefineryController
+      x-openapi-router-controller: openapi_server.controllers.metal_refinery_controller
+  /mine:
+    post:
+      description: This can only be done by the logged in user.
+      operationId: create_mine
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Mine'
+          application/xml:
+            schema:
+              $ref: '#/components/schemas/Mine'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Mine'
+        description: Created mine object
+      responses:
+        default:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Mine'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/Mine'
+          description: successful operation
+      summary: Create Mine
+      tags:
+      - mine
+      x-openapi-router-controller: openapi_server.controllers.mine_controller
+  /mine/createWithList:
+    post:
+      description: Creates list of mine with given input array
+      operationId: create_mines_with_list_input
+      requestBody:
+        content:
+          application/json:
+            schema:
+              items:
+                $ref: '#/components/schemas/Mine'
+              type: array
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Mine'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/Mine'
+          description: Successful operation
+        default:
+          description: successful operation
+      summary: Creates list of Mine with given input array
+      tags:
+      - mine
+      x-swagger-router-controller: ai.genpen.controllers.MineController
+      x-openapi-router-controller: openapi_server.controllers.mine_controller
+  /mine/{name}:
+    delete:
+      description: This can only be done by the logged in user.
+      operationId: delete_mine
+      parameters:
+      - description: The mine that needs to be deleted by name
+        explode: false
+        in: path
+        name: name
+        required: true
+        schema:
+          type: string
+        style: simple
+      responses:
+        "400":
+          description: Invalid Mine variable supplied
+        "404":
+          description: Mine not found
+      summary: Delete mine
+      tags:
+      - mine
+      x-openapi-router-controller: openapi_server.controllers.mine_controller
+    get:
+      description: ""
+      operationId: get_mine_by_name
+      parameters:
+      - description: 'The name that needs to be fetched. Use mine1 for testing. '
+        explode: false
+        in: path
+        name: name
+        required: true
+        schema:
+          format: string
+          type: string
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Mine'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/Mine'
+          description: successful operation
+        "400":
+          description: Invalid Mine variable supplied
+        "404":
+          description: Mine not found
+      summary: Get mine by name
+      tags:
+      - mine
+      x-openapi-router-controller: openapi_server.controllers.mine_controller
+    put:
+      description: This can only be done by the logged in user.
+      operationId: update_mine
+      parameters:
+      - description: name of mine that needs to be deleted
+        explode: false
+        in: path
+        name: name
+        required: true
+        schema:
+          format: string
+          type: string
+        style: simple
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Mine'
+          application/xml:
+            schema:
+              $ref: '#/components/schemas/Mine'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Mine'
+        description: Update an existent mine in the system
+      responses:
+        default:
+          description: successful operation
+      summary: Update mine
+      tags:
+      - mine
+      x-swagger-router-controller: ai.genpen.controllers.MineController
+      x-openapi-router-controller: openapi_server.controllers.mine_controller
+  /user:
+    post:
+      description: This can only be done by the logged in user.
+      operationId: create_user
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/User'
+          application/xml:
+            schema:
+              $ref: '#/components/schemas/User'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/User'
+        description: Created user object
+      responses:
+        default:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/User'
+          description: successful operation
+      summary: Create user
+      tags:
+      - user
+      x-openapi-router-controller: openapi_server.controllers.user_controller
+  /user/createWithList:
+    post:
+      description: Creates list of users with given input array
+      operationId: create_users_with_list_input
+      requestBody:
+        content:
+          application/json:
+            schema:
+              items:
+                $ref: '#/components/schemas/User'
+              type: array
+      responses:
+        "200":
+          content:
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/User'
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+          description: Successful operation
+        default:
+          description: successful operation
+      summary: Creates list of users with given input array
+      tags:
+      - user
+      x-swagger-router-controller: ai.genpen.controllers.UserController
+      x-openapi-router-controller: openapi_server.controllers.user_controller
+  /user/login:
+    get:
+      description: ""
+      operationId: login_user
+      parameters:
+      - description: The user name for login
+        explode: true
+        in: query
+        name: username
+        required: false
+        schema:
+          type: string
+        style: form
+      - description: The password for login in clear text
+        explode: true
+        in: query
+        name: password
+        required: false
+        schema:
+          type: string
+        style: form
+      responses:
+        "200":
+          content:
+            application/xml:
+              schema:
+                type: string
+            application/json:
+              schema:
+                type: string
+          description: successful operation
+          headers:
+            X-Rate-Limit:
+              description: calls per hour allowed by the user
+              explode: false
+              schema:
+                format: int32
+                type: integer
+              style: simple
+            X-Expires-After:
+              description: date in UTC when token expires
+              explode: false
+              schema:
+                format: date-time
+                type: string
+              style: simple
+        "400":
+          description: Invalid username/password supplied
+      summary: Logs user into the system
+      tags:
+      - user
+      x-openapi-router-controller: openapi_server.controllers.user_controller
+  /user/logout:
+    get:
+      description: ""
+      operationId: logout_user
+      parameters: []
+      responses:
+        default:
+          description: successful operation
+      summary: Logs out current logged in user session
+      tags:
+      - user
+      x-openapi-router-controller: openapi_server.controllers.user_controller
+  /user/{username}:
+    delete:
+      description: This can only be done by the logged in user.
+      operationId: delete_user
+      parameters:
+      - description: The name that needs to be deleted
+        explode: false
+        in: path
+        name: username
+        required: true
+        schema:
+          type: string
+        style: simple
+      responses:
+        "400":
+          description: Invalid username supplied
+        "404":
+          description: User not found
+      summary: Delete user
+      tags:
+      - user
+      x-openapi-router-controller: openapi_server.controllers.user_controller
+    get:
+      description: ""
+      operationId: get_user_by_name
+      parameters:
+      - description: 'The name that needs to be fetched. Use user1 for testing. '
+        explode: false
+        in: path
+        name: username
+        required: true
+        schema:
+          type: string
+        style: simple
+      responses:
+        "200":
+          content:
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/User'
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+          description: successful operation
+        "400":
+          description: Invalid username supplied
+        "404":
+          description: User not found
+      summary: Get user by user name
+      tags:
+      - user
+      x-openapi-router-controller: openapi_server.controllers.user_controller
+    put:
+      description: This can only be done by the logged in user.
+      operationId: update_user
+      parameters:
+      - description: name that need to be deleted
+        explode: false
+        in: path
+        name: username
+        required: true
+        schema:
+          type: string
+        style: simple
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/User'
+          application/xml:
+            schema:
+              $ref: '#/components/schemas/User'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/User'
+        description: Update an existent user in the store
+      responses:
+        default:
+          description: successful operation
+      summary: Update user
+      tags:
+      - user
+      x-swagger-router-controller: ai.genpen.controllers.UserController
+      x-openapi-router-controller: openapi_server.controllers.user_controller
+components:
+  schemas:
+    User:
+      example:
+        firstName: John
+        lastName: James
+        password: 123456789abC
+        userStatus: 1
+        phone: "14168785282"
+        id: 10
+        email: john@email.com
+        username: theUser
+      properties:
+        id:
+          example: 10
+          format: int64
+          title: id
+          type: integer
+        username:
+          example: theUser
+          title: username
+          type: string
+        firstName:
+          example: John
+          title: firstName
+          type: string
+        lastName:
+          example: James
+          title: lastName
+          type: string
+        email:
+          example: john@email.com
+          title: email
+          type: string
+        password:
+          example: 123456789abC
+          title: password
+          type: string
+        phone:
+          example: "14168785282"
+          title: phone
+          type: string
+        userStatus:
+          description: User Status
+          example: 1
+          format: int32
+          title: userStatus
+          type: integer
+      title: User
+      type: object
+      xml:
+        name: user
+      x-swagger-router-model: ai.genpen.models.User
+    Error:
+      properties:
+        code:
+          format: int32
+          type: integer
+        message:
+          type: string
+      required:
+      - code
+      - message
+      type: object
+      xml:
+        name: error
+    MetalRefinery:
+      example:
+        efficiency: 0.8008281904610115
+        cost: 0.0
+        life_expectancy: 0
+        open_time: 01-01-1968
+        fk_production_site_id: 0
+        close_time: 01-01-1968
+        type: type
+        capacity: 0
+        fk_object_id: 0
+        name: "52"
+        location: location
+        id: 60
+        status: false
+      properties:
+        status:
+          description: This attribute is a variable named status
+          example: false
+          format: boolean
+          title: status
+          type: boolean
+        capacity:
+          description: This attribute is a variable named capacity
+          example: 0
+          format: integer
+          maximum: 10000000
+          minimum: 0
+          title: capacity
+          type: integer
+        type:
+          description: This attribute is a variable named type
+          format: string
+          title: type
+          type: string
+          example: null
+        location:
+          description: This attribute is a variable named location
+          format: string
+          title: location
+          type: string
+          example: null
+        fk_production_site_id:
+          description: This attribute is a variable named fk_production_site_id
+          example: 0
+          format: integer
+          maximum: 10000000
+          minimum: 0
+          title: fk_production_site_id
+          type: integer
+        close_time:
+          description: This attribute is a variable named close_time
+          example: 01-01-1968
+          format: string
+          title: close_time
+          type: string
+        open_time:
+          description: This attribute is a variable named open_time
+          example: 01-01-1968
+          format: string
+          title: open_time
+          type: string
+        fk_object_id:
+          description: This attribute is a variable named fk_object_id
+          example: 0
+          format: integer
+          maximum: 10000000
+          minimum: 0
+          title: fk_object_id
+          type: integer
+        id:
+          description: This is a GenPen.AI specific attribute
+          example: 60
+          format: integer
+          maximum: 10000000
+          minimum: 0
+          title: id
+          type: integer
+        life_expectancy:
+          description: This attribute is a variable named life_expectancy
+          example: 0
+          format: integer
+          maximum: 10000000
+          minimum: 0
+          title: life_expectancy
+          type: integer
+        efficiency:
+          description: This attribute is a variable named efficiency
+          format: integer
+          title: efficiency
+          type: number
+        name:
+          description: This is a GenPen.AI specific attribute
+          example: "52"
+          format: string
+          title: name
+          type: string
+        cost:
+          description: This attribute is a variable named cost
+          example: 0.0
+          format: integer
+          title: cost
+          type: number
+      title: MetalRefinery
+      type: object
+      xml:
+        name: metalRefinery
+      x-swagger-router-model: ai.genpen.models.MetalRefinery
+    Mine:
+      example:
+        mined: false
+        fk_sender_id: 6027456
+        capacity_unit: capacity_unit
+        length: 0
+        active: false
+        date_mined: 01-01-1968
+        commodity_type: commodity_type
+        capacity: 0
+        risk_level: 0
+        power_usage: 0.8008281904610115
+        miner_id: 5962133
+        width: 0
+        name: "10"
+        fk_owner_id: 1465812
+        duration_its_been_active: 0
+        created_date: 01-01-1968
+        id: 119
+      properties:
+        capacity_unit:
+          description: This attribute is a variable named capacity_unit
+          format: string
+          title: capacity_unit
+          type: string
+          example: null
+        capacity:
+          description: This attribute is a variable named capacity
+          example: 0
+          format: integer
+          maximum: 10000000
+          minimum: 0
+          title: capacity
+          type: integer
+        power_usage:
+          description: This attribute is a variable named power_usage
+          format: integer
+          title: power_usage
+          type: number
+        duration_its_been_active:
+          description: This attribute is a variable named duration_its_been_active
+          example: 0
+          format: integer
+          maximum: 10000000
+          minimum: 0
+          title: duration_its_been_active
+          type: integer
+        active:
+          description: This attribute is a variable named active
+          example: false
+          format: boolean
+          title: active
+          type: boolean
+        fk_sender_id:
+          description: This attribute is a variable named fk_sender_id
+          format: integer
+          maximum: 10000000
+          minimum: 0
+          title: fk_sender_id
+          type: integer
+        risk_level:
+          description: This attribute is a variable named risk_level
+          example: 0
+          format: integer
+          title: risk_level
+          type: integer
+        created_date:
+          description: This attribute is a variable named created_date
+          example: 01-01-1968
+          format: string
+          title: created_date
+          type: string
+        fk_owner_id:
+          description: This attribute is a variable named fk_owner_id
+          format: integer
+          maximum: 10000000
+          minimum: 0
+          title: fk_owner_id
+          type: integer
+        mined:
+          description: This attribute is a variable named mined
+          example: false
+          format: boolean
+          title: mined
+          type: boolean
+        length:
+          description: This attribute is a variable named length
+          example: 0
+          format: integer
+          maximum: 10000000
+          minimum: 0
+          title: length
+          type: integer
+        id:
+          description: This is a GenPen.AI specific attribute
+          example: 119
+          format: integer
+          maximum: 10000000
+          minimum: 0
+          title: id
+          type: integer
+        date_mined:
+          description: This attribute is a variable named date_mined
+          example: 01-01-1968
+          format: string
+          title: date_mined
+          type: string
+        width:
+          description: This attribute is a variable named width
+          example: 0
+          format: integer
+          maximum: 10000000
+          minimum: 0
+          title: width
+          type: integer
+        name:
+          description: This is a GenPen.AI specific attribute
+          example: "10"
+          format: string
+          title: name
+          type: string
+        commodity_type:
+          description: This attribute is a variable named commodity_type
+          format: string
+          title: commodity_type
+          type: string
+          example: null
+        miner_id:
+          description: This attribute is a variable named miner_id
+          format: integer
+          maximum: 10000000
+          minimum: 0
+          title: miner_id
+          type: integer
+      title: Mine
+      type: object
+      xml:
+        name: mine
+      x-swagger-router-model: ai.genpen.models.Mine
+    Client:
+      example:
+        address: address
+        active: false
+        last_login_date: 01-01-1968
+        fk_group_id: 0
+        credit_rating: 0.0
+        fk_client_id: 0
+        phone: phone
+        name: "46"
+        created_date: 01-01-1968
+        id: 102
+        updated_date: 01-01-1968
+        email: email
+        status: false
+      properties:
+        address:
+          description: This attribute is a variable named address
+          format: string
+          title: address
+          type: string
+          example: null
+        status:
+          description: This attribute is a variable named status
+          example: false
+          format: boolean
+          title: status
+          type: boolean
+        fk_group_id:
+          description: This attribute is a variable named fk_group_id
+          example: 0
+          format: integer
+          maximum: 10000000
+          minimum: 0
+          title: fk_group_id
+          type: integer
+        credit_rating:
+          description: This attribute is a variable named credit_rating
+          example: 0.0
+          format: integer
+          title: credit_rating
+          type: number
+        active:
+          description: This attribute is a variable named active
+          example: false
+          format: boolean
+          title: active
+          type: boolean
+        email:
+          description: This attribute is a variable named email
+          format: string
+          title: email
+          type: string
+          example: null
+        created_date:
+          description: This attribute is a variable named created_date
+          example: 01-01-1968
+          format: string
+          title: created_date
+          type: string
+        fk_client_id:
+          description: This attribute is a variable named fk_client_id
+          example: 0
+          format: integer
+          maximum: 10000000
+          minimum: 0
+          title: fk_client_id
+          type: integer
+        id:
+          description: This is a GenPen.AI specific attribute
+          example: 102
+          format: integer
+          maximum: 10000000
+          minimum: 0
+          title: id
+          type: integer
+        name:
+          description: This is a GenPen.AI specific attribute
+          example: "46"
+          format: string
+          title: name
+          type: string
+        updated_date:
+          description: This attribute is a variable named updated_date
+          example: 01-01-1968
+          format: string
+          title: updated_date
+          type: string
+        phone:
+          description: This attribute is a variable named phone
+          format: string
+          title: phone
+          type: string
+          example: null
+        last_login_date:
+          description: This attribute is a variable named last_login_date
+          example: 01-01-1968
+          format: string
+          title: last_login_date
+          type: string
+      title: Client
+      type: object
+      xml:
+        name: client
+      x-swagger-router-model: ai.genpen.models.Client
+    Bullion:
+      example:
+        year_issued: 0
+        notes: notes
+        shape: shape
+        purity: 0.0
+        weight: 0.0
+        date_of_sale: 01-01-1968
+        date_of_purchase: 01-01-1968
+        purity_percentage: 0.0
+        price_per_oz: 0.8008281904610115
+        metal_type: metal_type
+        num_ingots: 0
+        name: "68"
+        fk_owner_id: 6027456
+        gold_troy_oz: 0.0
+        fk_id: 0
+        id: 79
+        value: 0.0
+        status: status
+      properties:
+        status:
+          description: This attribute is a variable named status
+          format: string
+          title: status
+          type: string
+          example: null
+        shape:
+          description: This attribute is a variable named shape
+          format: string
+          title: shape
+          type: string
+          example: null
+        price_per_oz:
+          description: This attribute is a variable named price_per_oz
+          format: integer
+          title: price_per_oz
+          type: number
+        purity_percentage:
+          description: This attribute is a variable named purity_percentage
+          example: 0.0
+          format: integer
+          title: purity_percentage
+          type: number
+        notes:
+          description: This attribute is a variable named notes
+          format: string
+          title: notes
+          type: string
+          example: null
+        value:
+          description: This attribute is a variable named value
+          example: 0.0
+          format: integer
+          title: value
+          type: number
+        year_issued:
+          description: This attribute is a variable named year_issued
+          example: 0
+          format: integer
+          maximum: 10000000
+          minimum: 0
+          title: year_issued
+          type: integer
+        purity:
+          description: This attribute is a variable named purity
+          example: 0.0
+          format: integer
+          title: purity
+          type: number
+        date_of_sale:
+          description: This attribute is a variable named date_of_sale
+          example: 01-01-1968
+          format: string
+          title: date_of_sale
+          type: string
+        gold_troy_oz:
+          description: This attribute is a variable named gold_troy_oz
+          example: 0.0
+          format: integer
+          title: gold_troy_oz
+          type: number
+        fk_owner_id:
+          description: This attribute is a variable named fk_owner_id
+          format: integer
+          maximum: 10000000
+          minimum: 0
+          title: fk_owner_id
+          type: integer
+        num_ingots:
+          description: This attribute is a variable named num_ingots
+          example: 0
+          format: integer
+          maximum: 10000000
+          minimum: 0
+          title: num_ingots
+          type: integer
+        id:
+          description: This is a GenPen.AI specific attribute
+          example: 79
+          format: integer
+          maximum: 10000000
+          minimum: 0
+          title: id
+          type: integer
+        weight:
+          description: This attribute is a variable named weight
+          example: 0.0
+          format: integer
+          title: weight
+          type: number
+        date_of_purchase:
+          description: This attribute is a variable named date_of_purchase
+          example: 01-01-1968
+          format: string
+          title: date_of_purchase
+          type: string
+        name:
+          description: This is a GenPen.AI specific attribute
+          example: "68"
+          format: string
+          title: name
+          type: string
+        fk_id:
+          description: This attribute is a variable named fk_id
+          example: 0
+          format: integer
+          maximum: 10000000
+          minimum: 0
+          title: fk_id
+          type: integer
+        metal_type:
+          description: This attribute is a variable named metal_type
+          format: string
+          title: metal_type
+          type: string
+          example: null
+      title: Bullion
+      type: object
+      xml:
+        name: bullion
+      x-swagger-router-model: ai.genpen.models.Bullion

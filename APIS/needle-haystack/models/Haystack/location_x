@@ -1,0 +1,13 @@
+{
+ "id":"1159894037",
+ "name":"location_x",
+ "example":"0f",
+ "required":"false",
+ "description":"This attribute is a variable named location_x",
+ "minimum":"0",
+ "maximum":"10000000",
+ "pattern":"",
+ "value":"0f",
+ "type":"number",
+ "format":"float"
+}

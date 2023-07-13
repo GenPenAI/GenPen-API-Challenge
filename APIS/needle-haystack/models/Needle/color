@@ -1,0 +1,11 @@
+{
+ "id":"1408837344",
+ "name":"color",
+ "example":"",
+ "required":"false",
+ "description":"This attribute is a variable named color",
+ "pattern":"",
+ "value":"",
+ "type":"string",
+ "format":"string"
+}

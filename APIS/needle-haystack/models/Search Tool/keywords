@@ -1,0 +1,11 @@
+{
+ "id":"266882018",
+ "name":"keywords",
+ "example":"",
+ "required":"false",
+ "description":"This attribute is a variable named keywords",
+ "pattern":"",
+ "value":"",
+ "type":"string",
+ "format":"string"
+}

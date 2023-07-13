@@ -1,0 +1,13 @@
+{
+ "id":"743796239",
+ "name":"num_clicks",
+ "example":"0",
+ "required":"false",
+ "description":"This attribute is a variable named num_clicks",
+ "minimum":"0",
+ "maximum":"10000000",
+ "pattern":"",
+ "value":"0",
+ "type":"integer",
+ "format":"integer"
+}

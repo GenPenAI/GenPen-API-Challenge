@@ -1,0 +1,11 @@
+{
+ "id":"1062305177",
+ "name":"last_updated",
+ "example":"01-01-1968",
+ "required":"false",
+ "description":"This attribute is a variable named last_updated",
+ "pattern":"",
+ "value":"01-01-1968",
+ "type":"string",
+ "format":"date"
+}

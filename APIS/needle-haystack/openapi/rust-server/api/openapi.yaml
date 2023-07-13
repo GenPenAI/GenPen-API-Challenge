@@ -1,0 +1,1618 @@
+openapi: 3.0.2
+info:
+  license:
+    name: MIT
+  title: API Inspector
+  version: 1.0.0
+servers:
+- url: http://localhost:8080/openapi-jaxrs-server-1.0.0/api/v3
+paths:
+  /user:
+    post:
+      description: This can only be done by the logged in user.
+      operationId: createUser
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/User'
+          application/xml:
+            schema:
+              $ref: '#/components/schemas/User'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/User'
+        description: Created user object
+      responses:
+        default:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/User'
+          description: successful operation
+      summary: Create user
+      tags:
+      - user
+  /user/createWithList:
+    post:
+      description: Creates list of users with given input array
+      operationId: createUsersWithListInput
+      requestBody:
+        content:
+          application/json:
+            schema:
+              items:
+                $ref: '#/components/schemas/User'
+              type: array
+      responses:
+        "200":
+          content:
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/User'
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+          description: Successful operation
+        default:
+          description: successful operation
+      summary: Creates list of users with given input array
+      tags:
+      - user
+      x-swagger-router-controller: ai.genpen.controllers.UserController
+  /user/login:
+    get:
+      description: ""
+      operationId: loginUser
+      parameters:
+      - description: The user name for login
+        explode: true
+        in: query
+        name: username
+        required: false
+        schema:
+          type: string
+        style: form
+      - description: The password for login in clear text
+        explode: true
+        in: query
+        name: password
+        required: false
+        schema:
+          type: string
+        style: form
+      responses:
+        "200":
+          content:
+            application/xml:
+              schema:
+                type: string
+            application/json:
+              schema:
+                type: string
+          description: successful operation
+          headers:
+            X-Rate-Limit:
+              description: calls per hour allowed by the user
+              explode: false
+              schema:
+                format: int32
+                type: integer
+              style: simple
+            X-Expires-After:
+              description: date in UTC when token expires
+              explode: false
+              schema:
+                format: date-time
+                type: string
+              style: simple
+        "400":
+          description: Invalid username/password supplied
+      summary: Logs user into the system
+      tags:
+      - user
+  /user/logout:
+    get:
+      description: ""
+      operationId: logoutUser
+      parameters: []
+      responses:
+        default:
+          description: successful operation
+      summary: Logs out current logged in user session
+      tags:
+      - user
+  /user/{username}:
+    delete:
+      description: This can only be done by the logged in user.
+      operationId: deleteUser
+      parameters:
+      - description: The name that needs to be deleted
+        explode: false
+        in: path
+        name: username
+        required: true
+        schema:
+          type: string
+        style: simple
+      responses:
+        "400":
+          description: Invalid username supplied
+        "404":
+          description: User not found
+      summary: Delete user
+      tags:
+      - user
+    get:
+      description: ""
+      operationId: getUserByName
+      parameters:
+      - description: 'The name that needs to be fetched. Use user1 for testing. '
+        explode: false
+        in: path
+        name: username
+        required: true
+        schema:
+          type: string
+        style: simple
+      responses:
+        "200":
+          content:
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/User'
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+          description: successful operation
+        "400":
+          description: Invalid username supplied
+        "404":
+          description: User not found
+      summary: Get user by user name
+      tags:
+      - user
+    put:
+      description: This can only be done by the logged in user.
+      operationId: updateUser
+      parameters:
+      - description: name that need to be deleted
+        explode: false
+        in: path
+        name: username
+        required: true
+        schema:
+          type: string
+        style: simple
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/User'
+          application/xml:
+            schema:
+              $ref: '#/components/schemas/User'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/User'
+        description: Update an existent user in the store
+      responses:
+        default:
+          description: successful operation
+      summary: Update user
+      tags:
+      - user
+      x-swagger-router-controller: ai.genpen.controllers.UserController
+  /dell274kUhDMonitor-S2721QS:
+    post:
+      description: This can only be done by the logged in user.
+      operationId: createDell274kUhdMonitor-S2721qs
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Dell274kUhdMonitor-S2721qs'
+          application/xml:
+            schema:
+              $ref: '#/components/schemas/Dell274kUhdMonitor-S2721qs'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Dell274kUhdMonitor-S2721qs'
+        description: Created dell274kUhDMonitor-S2721QS object
+      responses:
+        default:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Dell274kUhdMonitor-S2721qs'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/Dell274kUhdMonitor-S2721qs'
+          description: successful operation
+      summary: Create Dell274kUhdMonitor-S2721qs
+      tags:
+      - dell274kUhDMonitor-S2721QS
+  /dell274kUhDMonitor-S2721QS/createWithList:
+    post:
+      description: Creates list of dell274kUhDMonitor-S2721QS with given input array
+      operationId: createDell274kUhdMonitor-S2721qssWithListInput
+      requestBody:
+        content:
+          application/json:
+            schema:
+              items:
+                $ref: '#/components/schemas/Dell274kUhdMonitor-S2721qs'
+              type: array
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Dell274kUhdMonitor-S2721qs'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/Dell274kUhdMonitor-S2721qs'
+          description: Successful operation
+        default:
+          description: successful operation
+      summary: Creates list of Dell274kUhdMonitor-S2721qs with given input array
+      tags:
+      - dell274kUhDMonitor-S2721QS
+      x-swagger-router-controller: ai.genpen.controllers.Dell274kUhdMonitor-S2721qsController
+  /dell274kUhDMonitor-S2721QS/{name}:
+    delete:
+      description: This can only be done by the logged in user.
+      operationId: deleteDell274kUhdMonitor-S2721qs
+      parameters:
+      - description: The dell274kUhDMonitor-S2721QS that needs to be deleted by name
+        explode: false
+        in: path
+        name: name
+        required: true
+        schema:
+          type: string
+        style: simple
+      responses:
+        "400":
+          description: Invalid Dell274kUhdMonitor-S2721qs variable supplied
+        "404":
+          description: Dell274kUhdMonitor-S2721qs not found
+      summary: Delete dell274kUhDMonitor-S2721QS
+      tags:
+      - dell274kUhDMonitor-S2721QS
+    get:
+      description: ""
+      operationId: getDell274kUhdMonitor-S2721qsByName
+      parameters:
+      - description: 'The name that needs to be fetched. Use dell274kUhDMonitor-S2721QS1
+          for testing. '
+        explode: false
+        in: path
+        name: name
+        required: true
+        schema:
+          format: string
+          type: string
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Dell274kUhdMonitor-S2721qs'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/Dell274kUhdMonitor-S2721qs'
+          description: successful operation
+        "400":
+          description: Invalid Dell274kUhdMonitor-S2721qs variable supplied
+        "404":
+          description: Dell274kUhdMonitor-S2721qs not found
+      summary: Get dell274kUhDMonitor-S2721QS by name
+      tags:
+      - dell274kUhDMonitor-S2721QS
+    put:
+      description: This can only be done by the logged in user.
+      operationId: updateDell274kUhdMonitor-S2721qs
+      parameters:
+      - description: name of dell274kUhDMonitor-S2721QS that needs to be deleted
+        explode: false
+        in: path
+        name: name
+        required: true
+        schema:
+          format: string
+          type: string
+        style: simple
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Dell274kUhdMonitor-S2721qs'
+          application/xml:
+            schema:
+              $ref: '#/components/schemas/Dell274kUhdMonitor-S2721qs'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Dell274kUhdMonitor-S2721qs'
+        description: Update an existent dell274kUhDMonitor-S2721QS in the system
+      responses:
+        default:
+          description: successful operation
+      summary: Update dell274kUhDMonitor-S2721QS
+      tags:
+      - dell274kUhDMonitor-S2721QS
+      x-swagger-router-controller: ai.genpen.controllers.Dell274kUhdMonitor-S2721qsController
+  /dog:
+    post:
+      description: This can only be done by the logged in user.
+      operationId: createDog
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Dog'
+          application/xml:
+            schema:
+              $ref: '#/components/schemas/Dog'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Dog'
+        description: Created dog object
+      responses:
+        default:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Dog'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/Dog'
+          description: successful operation
+      summary: Create Dog
+      tags:
+      - dog
+  /dog/createWithList:
+    post:
+      description: Creates list of dog with given input array
+      operationId: createDogsWithListInput
+      requestBody:
+        content:
+          application/json:
+            schema:
+              items:
+                $ref: '#/components/schemas/Dog'
+              type: array
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Dog'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/Dog'
+          description: Successful operation
+        default:
+          description: successful operation
+      summary: Creates list of Dog with given input array
+      tags:
+      - dog
+      x-swagger-router-controller: ai.genpen.controllers.DogController
+  /dog/{name}:
+    delete:
+      description: This can only be done by the logged in user.
+      operationId: deleteDog
+      parameters:
+      - description: The dog that needs to be deleted by name
+        explode: false
+        in: path
+        name: name
+        required: true
+        schema:
+          type: string
+        style: simple
+      responses:
+        "400":
+          description: Invalid Dog variable supplied
+        "404":
+          description: Dog not found
+      summary: Delete dog
+      tags:
+      - dog
+    get:
+      description: ""
+      operationId: getDogByName
+      parameters:
+      - description: 'The name that needs to be fetched. Use dog1 for testing. '
+        explode: false
+        in: path
+        name: name
+        required: true
+        schema:
+          format: string
+          type: string
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Dog'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/Dog'
+          description: successful operation
+        "400":
+          description: Invalid Dog variable supplied
+        "404":
+          description: Dog not found
+      summary: Get dog by name
+      tags:
+      - dog
+    put:
+      description: This can only be done by the logged in user.
+      operationId: updateDog
+      parameters:
+      - description: name of dog that needs to be deleted
+        explode: false
+        in: path
+        name: name
+        required: true
+        schema:
+          format: string
+          type: string
+        style: simple
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Dog'
+          application/xml:
+            schema:
+              $ref: '#/components/schemas/Dog'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Dog'
+        description: Update an existent dog in the system
+      responses:
+        default:
+          description: successful operation
+      summary: Update dog
+      tags:
+      - dog
+      x-swagger-router-controller: ai.genpen.controllers.DogController
+  /lenovoLegionTower7iGen8Desktop-IntelCoreI9Processor:
+    post:
+      description: This can only be done by the logged in user.
+      operationId: createLenovoLegionTower7iGen8Desktop-IntelCoreI9Processor
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/LenovoLegionTower7iGen8Desktop-IntelCoreI9Processor'
+          application/xml:
+            schema:
+              $ref: '#/components/schemas/LenovoLegionTower7iGen8Desktop-IntelCoreI9Processor'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/LenovoLegionTower7iGen8Desktop-IntelCoreI9Processor'
+        description: Created lenovoLegionTower7iGen8Desktop-IntelCoreI9Processor object
+      responses:
+        default:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/LenovoLegionTower7iGen8Desktop-IntelCoreI9Processor'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/LenovoLegionTower7iGen8Desktop-IntelCoreI9Processor'
+          description: successful operation
+      summary: Create LenovoLegionTower7iGen8Desktop-IntelCoreI9Processor
+      tags:
+      - lenovoLegionTower7iGen8Desktop-IntelCoreI9Processor
+  /lenovoLegionTower7iGen8Desktop-IntelCoreI9Processor/createWithList:
+    post:
+      description: Creates list of lenovoLegionTower7iGen8Desktop-IntelCoreI9Processor
+        with given input array
+      operationId: createLenovoLegionTower7iGen8Desktop-IntelCoreI9ProcessorsWithListInput
+      requestBody:
+        content:
+          application/json:
+            schema:
+              items:
+                $ref: '#/components/schemas/LenovoLegionTower7iGen8Desktop-IntelCoreI9Processor'
+              type: array
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/LenovoLegionTower7iGen8Desktop-IntelCoreI9Processor'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/LenovoLegionTower7iGen8Desktop-IntelCoreI9Processor'
+          description: Successful operation
+        default:
+          description: successful operation
+      summary: Creates list of LenovoLegionTower7iGen8Desktop-IntelCoreI9Processor
+        with given input array
+      tags:
+      - lenovoLegionTower7iGen8Desktop-IntelCoreI9Processor
+      x-swagger-router-controller: ai.genpen.controllers.LenovoLegionTower7iGen8Desktop-IntelCoreI9ProcessorController
+  /lenovoLegionTower7iGen8Desktop-IntelCoreI9Processor/{name}:
+    delete:
+      description: This can only be done by the logged in user.
+      operationId: deleteLenovoLegionTower7iGen8Desktop-IntelCoreI9Processor
+      parameters:
+      - description: The lenovoLegionTower7iGen8Desktop-IntelCoreI9Processor that
+          needs to be deleted by name
+        explode: false
+        in: path
+        name: name
+        required: true
+        schema:
+          type: string
+        style: simple
+      responses:
+        "400":
+          description: Invalid LenovoLegionTower7iGen8Desktop-IntelCoreI9Processor
+            variable supplied
+        "404":
+          description: LenovoLegionTower7iGen8Desktop-IntelCoreI9Processor not found
+      summary: Delete lenovoLegionTower7iGen8Desktop-IntelCoreI9Processor
+      tags:
+      - lenovoLegionTower7iGen8Desktop-IntelCoreI9Processor
+    get:
+      description: ""
+      operationId: getLenovoLegionTower7iGen8Desktop-IntelCoreI9ProcessorByName
+      parameters:
+      - description: 'The name that needs to be fetched. Use lenovoLegionTower7iGen8Desktop-IntelCoreI9Processor1
+          for testing. '
+        explode: false
+        in: path
+        name: name
+        required: true
+        schema:
+          format: string
+          type: string
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/LenovoLegionTower7iGen8Desktop-IntelCoreI9Processor'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/LenovoLegionTower7iGen8Desktop-IntelCoreI9Processor'
+          description: successful operation
+        "400":
+          description: Invalid LenovoLegionTower7iGen8Desktop-IntelCoreI9Processor
+            variable supplied
+        "404":
+          description: LenovoLegionTower7iGen8Desktop-IntelCoreI9Processor not found
+      summary: Get lenovoLegionTower7iGen8Desktop-IntelCoreI9Processor by name
+      tags:
+      - lenovoLegionTower7iGen8Desktop-IntelCoreI9Processor
+    put:
+      description: This can only be done by the logged in user.
+      operationId: updateLenovoLegionTower7iGen8Desktop-IntelCoreI9Processor
+      parameters:
+      - description: name of lenovoLegionTower7iGen8Desktop-IntelCoreI9Processor that
+          needs to be deleted
+        explode: false
+        in: path
+        name: name
+        required: true
+        schema:
+          format: string
+          type: string
+        style: simple
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/LenovoLegionTower7iGen8Desktop-IntelCoreI9Processor'
+          application/xml:
+            schema:
+              $ref: '#/components/schemas/LenovoLegionTower7iGen8Desktop-IntelCoreI9Processor'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/LenovoLegionTower7iGen8Desktop-IntelCoreI9Processor'
+        description: Update an existent lenovoLegionTower7iGen8Desktop-IntelCoreI9Processor
+          in the system
+      responses:
+        default:
+          description: successful operation
+      summary: Update lenovoLegionTower7iGen8Desktop-IntelCoreI9Processor
+      tags:
+      - lenovoLegionTower7iGen8Desktop-IntelCoreI9Processor
+      x-swagger-router-controller: ai.genpen.controllers.LenovoLegionTower7iGen8Desktop-IntelCoreI9ProcessorController
+  /alienwareAuroraR15GamingDesktop:
+    post:
+      description: This can only be done by the logged in user.
+      operationId: createAlienwareAuroraR15GamingDesktop
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AlienwareAuroraR15GamingDesktop'
+          application/xml:
+            schema:
+              $ref: '#/components/schemas/AlienwareAuroraR15GamingDesktop'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/AlienwareAuroraR15GamingDesktop'
+        description: Created alienwareAuroraR15GamingDesktop object
+      responses:
+        default:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AlienwareAuroraR15GamingDesktop'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/AlienwareAuroraR15GamingDesktop'
+          description: successful operation
+      summary: Create AlienwareAuroraR15GamingDesktop
+      tags:
+      - alienwareAuroraR15GamingDesktop
+  /alienwareAuroraR15GamingDesktop/createWithList:
+    post:
+      description: Creates list of alienwareAuroraR15GamingDesktop with given input
+        array
+      operationId: createAlienwareAuroraR15GamingDesktopsWithListInput
+      requestBody:
+        content:
+          application/json:
+            schema:
+              items:
+                $ref: '#/components/schemas/AlienwareAuroraR15GamingDesktop'
+              type: array
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AlienwareAuroraR15GamingDesktop'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/AlienwareAuroraR15GamingDesktop'
+          description: Successful operation
+        default:
+          description: successful operation
+      summary: Creates list of AlienwareAuroraR15GamingDesktop with given input array
+      tags:
+      - alienwareAuroraR15GamingDesktop
+      x-swagger-router-controller: ai.genpen.controllers.AlienwareAuroraR15GamingDesktopController
+  /alienwareAuroraR15GamingDesktop/{name}:
+    delete:
+      description: This can only be done by the logged in user.
+      operationId: deleteAlienwareAuroraR15GamingDesktop
+      parameters:
+      - description: The alienwareAuroraR15GamingDesktop that needs to be deleted
+          by name
+        explode: false
+        in: path
+        name: name
+        required: true
+        schema:
+          type: string
+        style: simple
+      responses:
+        "400":
+          description: Invalid AlienwareAuroraR15GamingDesktop variable supplied
+        "404":
+          description: AlienwareAuroraR15GamingDesktop not found
+      summary: Delete alienwareAuroraR15GamingDesktop
+      tags:
+      - alienwareAuroraR15GamingDesktop
+    get:
+      description: ""
+      operationId: getAlienwareAuroraR15GamingDesktopByName
+      parameters:
+      - description: 'The name that needs to be fetched. Use alienwareAuroraR15GamingDesktop1
+          for testing. '
+        explode: false
+        in: path
+        name: name
+        required: true
+        schema:
+          format: string
+          type: string
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AlienwareAuroraR15GamingDesktop'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/AlienwareAuroraR15GamingDesktop'
+          description: successful operation
+        "400":
+          description: Invalid AlienwareAuroraR15GamingDesktop variable supplied
+        "404":
+          description: AlienwareAuroraR15GamingDesktop not found
+      summary: Get alienwareAuroraR15GamingDesktop by name
+      tags:
+      - alienwareAuroraR15GamingDesktop
+    put:
+      description: This can only be done by the logged in user.
+      operationId: updateAlienwareAuroraR15GamingDesktop
+      parameters:
+      - description: name of alienwareAuroraR15GamingDesktop that needs to be deleted
+        explode: false
+        in: path
+        name: name
+        required: true
+        schema:
+          format: string
+          type: string
+        style: simple
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AlienwareAuroraR15GamingDesktop'
+          application/xml:
+            schema:
+              $ref: '#/components/schemas/AlienwareAuroraR15GamingDesktop'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/AlienwareAuroraR15GamingDesktop'
+        description: Update an existent alienwareAuroraR15GamingDesktop in the system
+      responses:
+        default:
+          description: successful operation
+      summary: Update alienwareAuroraR15GamingDesktop
+      tags:
+      - alienwareAuroraR15GamingDesktop
+      x-swagger-router-controller: ai.genpen.controllers.AlienwareAuroraR15GamingDesktopController
+  /cat:
+    post:
+      description: This can only be done by the logged in user.
+      operationId: createCat
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Cat'
+          application/xml:
+            schema:
+              $ref: '#/components/schemas/Cat'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Cat'
+        description: Created cat object
+      responses:
+        default:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Cat'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/Cat'
+          description: successful operation
+      summary: Create Cat
+      tags:
+      - cat
+  /cat/createWithList:
+    post:
+      description: Creates list of cat with given input array
+      operationId: createCatsWithListInput
+      requestBody:
+        content:
+          application/json:
+            schema:
+              items:
+                $ref: '#/components/schemas/Cat'
+              type: array
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Cat'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/Cat'
+          description: Successful operation
+        default:
+          description: successful operation
+      summary: Creates list of Cat with given input array
+      tags:
+      - cat
+      x-swagger-router-controller: ai.genpen.controllers.CatController
+  /cat/{name}:
+    delete:
+      description: This can only be done by the logged in user.
+      operationId: deleteCat
+      parameters:
+      - description: The cat that needs to be deleted by name
+        explode: false
+        in: path
+        name: name
+        required: true
+        schema:
+          type: string
+        style: simple
+      responses:
+        "400":
+          description: Invalid Cat variable supplied
+        "404":
+          description: Cat not found
+      summary: Delete cat
+      tags:
+      - cat
+    get:
+      description: ""
+      operationId: getCatByName
+      parameters:
+      - description: 'The name that needs to be fetched. Use cat1 for testing. '
+        explode: false
+        in: path
+        name: name
+        required: true
+        schema:
+          format: string
+          type: string
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Cat'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/Cat'
+          description: successful operation
+        "400":
+          description: Invalid Cat variable supplied
+        "404":
+          description: Cat not found
+      summary: Get cat by name
+      tags:
+      - cat
+    put:
+      description: This can only be done by the logged in user.
+      operationId: updateCat
+      parameters:
+      - description: name of cat that needs to be deleted
+        explode: false
+        in: path
+        name: name
+        required: true
+        schema:
+          format: string
+          type: string
+        style: simple
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Cat'
+          application/xml:
+            schema:
+              $ref: '#/components/schemas/Cat'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Cat'
+        description: Update an existent cat in the system
+      responses:
+        default:
+          description: successful operation
+      summary: Update cat
+      tags:
+      - cat
+      x-swagger-router-controller: ai.genpen.controllers.CatController
+components:
+  schemas:
+    User:
+      example:
+        firstName: John
+        lastName: James
+        password: 123456789abC
+        userStatus: 1
+        phone: "14168785282"
+        id: 10
+        email: john@email.com
+        username: theUser
+      properties:
+        id:
+          example: 10
+          format: int64
+          type: integer
+        username:
+          example: theUser
+          type: string
+        firstName:
+          example: John
+          type: string
+        lastName:
+          example: James
+          type: string
+        email:
+          example: john@email.com
+          type: string
+        password:
+          example: 123456789abC
+          type: string
+        phone:
+          example: "14168785282"
+          type: string
+        userStatus:
+          description: User Status
+          example: 1
+          format: int32
+          type: integer
+      type: object
+      xml:
+        name: user
+      x-swagger-router-model: ai.genpen.models.User
+    Error:
+      properties:
+        code:
+          format: int32
+          type: integer
+        message:
+          type: string
+      required:
+      - code
+      - message
+      type: object
+      xml:
+        name: error
+    Dell274kUhdMonitor-S2721qs:
+      example:
+        connectivityPorts: connectivityPorts
+        responseTime: 0
+        gPO-428: 105
+        aspectRatio: 0.0
+        colorGamut: colorGamut
+        resolution: 0
+        contrastRatio: 6.027456183070403
+        integratedSpeakers: false
+        screenSize: 0
+        brightness: 0
+        viewingAngle: 0
+        colorDepth: 0
+        gPO-cf2: "38"
+        priceRange: 0.8008281904610115
+        panelType: panelType
+        tiltableStand: false
+        vESAMountable: false
+      properties:
+        integratedSpeakers:
+          default: false
+          description: This attribute is a variable named:Integrated Speakers
+          example: false
+          format: boolean
+          type: boolean
+        colorDepth:
+          default: 0
+          description: This attribute is a variable named:Color Depth
+          example: 0
+          format: int64
+          maximum: 2147483647
+          minimum: -2147483648
+          type: integer
+        responseTime:
+          default: 0
+          description: This attribute is a variable named:Response Time
+          example: 0
+          format: int64
+          maximum: 2147483647
+          minimum: -2147483648
+          type: integer
+        resolution:
+          default: 0
+          description: This attribute is a variable named:Resolution
+          example: 0
+          format: int64
+          maximum: 2147483647
+          minimum: -2147483648
+          type: integer
+        viewingAngle:
+          default: 0
+          description: This attribute is a variable named:Viewing Angle
+          example: 0
+          format: int64
+          maximum: 2147483647
+          minimum: -2147483648
+          type: integer
+        tiltableStand:
+          default: false
+          description: This attribute is a variable named:Tiltable Stand
+          example: false
+          format: boolean
+          type: boolean
+        priceRange:
+          description: This attribute is a variable named:Price Range
+          format: int32
+          type: number
+        screenSize:
+          default: 0
+          description: This attribute is a variable named:Screen Size
+          example: 0
+          format: int64
+          maximum: 2147483647
+          minimum: -2147483648
+          type: integer
+        brightness:
+          default: 0
+          description: This attribute is a variable named:Brightness
+          example: 0
+          format: int64
+          maximum: 2147483647
+          minimum: -2147483648
+          type: integer
+        colorGamut:
+          description: This attribute is a variable named:Color Gamut
+          format: string
+          type: string
+          example: null
+        gPO-428:
+          default: 4316
+          example: 105
+          format: int64
+          maximum: 2147483647
+          minimum: -2147483648
+          type: integer
+        panelType:
+          description: This attribute is a variable named:Panel Type
+          format: string
+          type: string
+          example: null
+        vESAMountable:
+          default: false
+          description: This attribute is a variable named:VESA Mountable
+          example: false
+          format: boolean
+          type: boolean
+        gPO-cf2:
+          default: "4317"
+          example: "38"
+          format: string
+          type: string
+        connectivityPorts:
+          description: This attribute is a variable named:Connectivity Ports
+          format: string
+          type: string
+          example: null
+        contrastRatio:
+          description: This attribute is a variable named:Contrast Ratio
+          format: int32
+          type: number
+        aspectRatio:
+          default: 0.0
+          description: This attribute is a variable named:Aspect Ratio
+          example: 0.0
+          format: int32
+          type: number
+      required:
+      - gPO-428
+      - gPO-cf2
+      type: object
+      xml:
+        name: dell274kUhDMonitor-S2721QS
+      x-swagger-router-model: ai.genpen.models.Dell274kUhdMonitor-S2721qs
+    Dog:
+      example:
+        energetic: false
+        gender: gender
+        friendly: false
+        loyal: false
+        weight: 0.8008281904610115
+        affectionate: false
+        noisy: false
+        vaccinated: false
+        breed: breed
+        intelligent: false
+        colour: colour
+        gPO-df0: 24
+        healthy: false
+        age: 0
+        height: 6.027456183070403
+        gPO-e4a: "118"
+      properties:
+        affectionate:
+          default: false
+          description: This attribute is a variable named:Affectionate
+          example: false
+          format: boolean
+          type: boolean
+        loyal:
+          default: false
+          description: This attribute is a variable named:Loyal
+          example: false
+          format: boolean
+          type: boolean
+        breed:
+          description: This attribute is a variable named:Breed
+          format: string
+          type: string
+          example: null
+        weight:
+          description: This attribute is a variable named:Weight
+          format: int32
+          type: number
+        height:
+          description: This attribute is a variable named:Height
+          format: int32
+          type: number
+        noisy:
+          default: false
+          description: This attribute is a variable named:Noisy
+          example: false
+          format: boolean
+          type: boolean
+        energetic:
+          default: false
+          description: This attribute is a variable named:Energetic
+          example: false
+          format: boolean
+          type: boolean
+        friendly:
+          default: false
+          description: This attribute is a variable named:Friendly
+          example: false
+          format: boolean
+          type: boolean
+        healthy:
+          default: false
+          description: This attribute is a variable named:Healthy
+          example: false
+          format: boolean
+          type: boolean
+        vaccinated:
+          default: false
+          description: This attribute is a variable named:Vaccinated
+          example: false
+          format: boolean
+          type: boolean
+        gPO-df0:
+          default: 4318
+          example: 24
+          format: int64
+          maximum: 2147483647
+          minimum: -2147483648
+          type: integer
+        age:
+          default: 0
+          description: This attribute is a variable named:Age
+          example: 0
+          format: int64
+          maximum: 2147483647
+          minimum: -2147483648
+          type: integer
+        intelligent:
+          default: false
+          description: This attribute is a variable named:Intelligent
+          example: false
+          format: boolean
+          type: boolean
+        gPO-e4a:
+          default: "4319"
+          example: "118"
+          format: string
+          type: string
+        gender:
+          description: This attribute is a variable named:Gender
+          format: string
+          type: string
+          example: null
+        colour:
+          description: This attribute is a variable named:Colour
+          format: string
+          type: string
+          example: null
+      required:
+      - gPO-df0
+      - gPO-e4a
+      type: object
+      xml:
+        name: dog
+      x-swagger-router-model: ai.genpen.models.Dog
+    LenovoLegionTower7iGen8Desktop-IntelCoreI9Processor:
+      example:
+        generation: 0
+        memory: 0
+        powerSupplyUnitSizeWatts: 0
+        cardReaderType: cardReaderType
+        portsNumber: 0
+        opticalDriveType: opticalDriveType
+        storage: 0
+        graphics: graphics
+        processor: processor
+        gPO-a87: 72
+        colorSchemeOption1and2: colorSchemeOption1and2
+        operatingSystem: operatingSystem
+        speed: 0.8008281904610115
+        gPO-181: "46"
+        cores: 0
+        model: model
+        brand: brand
+      properties:
+        portsNumber:
+          default: 0
+          description: This attribute is a variable named:PortsNumber
+          example: 0
+          format: int64
+          maximum: 2147483647
+          minimum: -2147483648
+          type: integer
+        cardReaderType:
+          description: This attribute is a variable named:CardReaderType
+          format: string
+          type: string
+          example: null
+        generation:
+          default: 0
+          description: This attribute is a variable named:Generation
+          example: 0
+          format: int64
+          maximum: 2147483647
+          minimum: -2147483648
+          type: integer
+        processor:
+          description: This attribute is a variable named:Processor
+          format: string
+          type: string
+          example: null
+        storage:
+          default: 0
+          description: This attribute is a variable named:Storage
+          example: 0
+          format: int64
+          maximum: 2147483647
+          minimum: -2147483648
+          type: integer
+        memory:
+          default: 0
+          description: This attribute is a variable named:Memory
+          example: 0
+          format: int64
+          maximum: 2147483647
+          minimum: -2147483648
+          type: integer
+        speed:
+          description: This attribute is a variable named:Speed
+          format: int32
+          type: number
+        powerSupplyUnitSizeWatts:
+          default: 0
+          description: This attribute is a variable named:PowerSupplyUnitSizeWatts
+          example: 0
+          format: int64
+          maximum: 2147483647
+          minimum: -2147483648
+          type: integer
+        gPO-a87:
+          default: 2628
+          example: 72
+          format: int64
+          maximum: 2147483647
+          minimum: -2147483648
+          type: integer
+        colorSchemeOption1and2:
+          description: This attribute is a variable named:ColorSchemeOption1and2
+          format: string
+          type: string
+          example: null
+        cores:
+          default: 0
+          description: This attribute is a variable named:Cores
+          example: 0
+          format: int64
+          maximum: 2147483647
+          minimum: -2147483648
+          type: integer
+        graphics:
+          description: This attribute is a variable named:Graphics
+          format: string
+          type: string
+          example: null
+        gPO-181:
+          default: "2629"
+          example: "46"
+          format: string
+          type: string
+        operatingSystem:
+          description: This attribute is a variable named:OperatingSystem
+          format: string
+          type: string
+          example: null
+        model:
+          description: This attribute is a variable named:Model
+          format: string
+          type: string
+          example: null
+        brand:
+          description: This attribute is a variable named:Brand
+          format: string
+          type: string
+          example: null
+        opticalDriveType:
+          description: This attribute is a variable named:OpticalDriveType
+          format: string
+          type: string
+          example: null
+      required:
+      - gPO-181
+      - gPO-a87
+      type: object
+      xml:
+        name: lenovoLegionTower7iGen8Desktop-IntelCoreI9Processor
+      x-swagger-router-model: ai.genpen.models.LenovoLegionTower7iGen8Desktop-IntelCoreI9Processor
+    AlienwareAuroraR15GamingDesktop:
+      example:
+        gPO-fb8: 99
+        windows10Compatible: false
+        smartAirflowTechnology: false
+        maxRaMCapacity: 0
+        liquidCoolingOption: false
+        multiMonitorSupport: false
+        gPO-e23: "94"
+        "1TBSsDStorage": 0.0
+        nVidiaGraphics: nVidiaGraphics
+        highDefinitionAudioOut: false
+        customizableLighting: false
+        "8thGenProcessor": 8thGenProcessor
+        heatManagementSystem: false
+        hDMIOutputs: 0
+        "7UsBPorts": 0
+        aWCCInterface: aWCCInterface
+        built-inWi-Fi: false
+      properties:
+        nVidiaGraphics:
+          description: This attribute is a variable named:NVidia Graphics
+          format: string
+          type: string
+          example: null
+        hDMIOutputs:
+          default: 0
+          description: This attribute is a variable named:HDMI Outputs
+          example: 0
+          format: int64
+          maximum: 2147483647
+          minimum: -2147483648
+          type: integer
+        windows10Compatible:
+          default: false
+          description: This attribute is a variable named:Windows 10 Compatible
+          example: false
+          format: boolean
+          type: boolean
+        aWCCInterface:
+          description: This attribute is a variable named:AWCC Interface
+          format: string
+          type: string
+          example: null
+        multiMonitorSupport:
+          default: false
+          description: This attribute is a variable named:Multi Monitor Support
+          example: false
+          format: boolean
+          type: boolean
+        heatManagementSystem:
+          default: false
+          description: This attribute is a variable named:Heat Management System
+          example: false
+          format: boolean
+          type: boolean
+        "1TBSsDStorage":
+          default: 0.0
+          description: This attribute is a variable named:1TB SSD Storage
+          example: 0.0
+          format: int32
+          type: number
+        "8thGenProcessor":
+          description: This attribute is a variable named:8th Gen Processor
+          format: string
+          type: string
+          example: null
+        highDefinitionAudioOut:
+          default: false
+          description: This attribute is a variable named:High Definition Audio Out
+          example: false
+          format: boolean
+          type: boolean
+        gPO-fb8:
+          default: 2244
+          example: 99
+          format: int64
+          maximum: 2147483647
+          minimum: -2147483648
+          type: integer
+        gPO-e23:
+          default: "2245"
+          example: "94"
+          format: string
+          type: string
+        liquidCoolingOption:
+          default: false
+          description: This attribute is a variable named:Liquid Cooling Option
+          example: false
+          format: boolean
+          type: boolean
+        built-inWi-Fi:
+          default: false
+          description: This attribute is a variable named:Built-in Wi-Fi
+          example: false
+          format: boolean
+          type: boolean
+        customizableLighting:
+          default: false
+          description: This attribute is a variable named:Customizable Lighting
+          example: false
+          format: boolean
+          type: boolean
+        maxRaMCapacity:
+          default: 0
+          description: This attribute is a variable named:Max RAM Capacity
+          example: 0
+          format: int64
+          maximum: 2147483647
+          minimum: -2147483648
+          type: integer
+        "7UsBPorts":
+          default: 0
+          description: This attribute is a variable named:7 USB Ports
+          example: 0
+          format: int64
+          maximum: 2147483647
+          minimum: -2147483648
+          type: integer
+        smartAirflowTechnology:
+          default: false
+          description: This attribute is a variable named:Smart Airflow Technology
+          example: false
+          format: boolean
+          type: boolean
+      required:
+      - gPO-e23
+      - gPO-fb8
+      type: object
+      xml:
+        name: alienwareAuroraR15GamingDesktop
+      x-swagger-router-model: ai.genpen.models.AlienwareAuroraR15GamingDesktop
+    Cat:
+      example:
+        coatPattern: coatPattern
+        sleepsHours: 0
+        gPO-449: 97
+        perchesPlaces: false
+        weight: 0.0
+        hasClaws: false
+        meowFrequency: 0
+        breed: breed
+        jumpHeight: 0.8008281904610115
+        tailLength: 0
+        eyeColor: eyeColor
+        likesPeople: false
+        furryTail: false
+        gPO-256: "64"
+        moodyTemperament: false
+        furColor: furColor
+        age: 0
+      properties:
+        sleepsHours:
+          default: 0
+          description: This attribute is a variable named:sleeps hours
+          example: 0
+          format: int64
+          maximum: 2147483647
+          minimum: -2147483648
+          type: integer
+        eyeColor:
+          description: This attribute is a variable named:eye color
+          format: string
+          type: string
+          example: null
+        furryTail:
+          default: false
+          description: This attribute is a variable named:furry tail
+          example: false
+          format: boolean
+          type: boolean
+        age:
+          default: 0
+          description: This attribute is a variable named:age
+          example: 0
+          format: int64
+          maximum: 2147483647
+          minimum: -2147483648
+          type: integer
+        jumpHeight:
+          description: This attribute is a variable named:jump height
+          format: int32
+          type: number
+        perchesPlaces:
+          default: false
+          description: This attribute is a variable named:perches places
+          example: false
+          format: boolean
+          type: boolean
+        moodyTemperament:
+          default: false
+          description: This attribute is a variable named:moody temperament
+          example: false
+          format: boolean
+          type: boolean
+        tailLength:
+          default: 0
+          description: This attribute is a variable named:tail length
+          example: 0
+          format: int64
+          maximum: 2147483647
+          minimum: -2147483648
+          type: integer
+        coatPattern:
+          description: This attribute is a variable named:coat pattern
+          format: string
+          type: string
+          example: null
+        likesPeople:
+          default: false
+          description: This attribute is a variable named:likes people
+          example: false
+          format: boolean
+          type: boolean
+        meowFrequency:
+          default: 0
+          description: This attribute is a variable named:meow frequency
+          example: 0
+          format: int64
+          maximum: 2147483647
+          minimum: -2147483648
+          type: integer
+        furColor:
+          description: This attribute is a variable named:fur color
+          format: string
+          type: string
+          example: null
+        gPO-449:
+          default: 3096
+          example: 97
+          format: int64
+          maximum: 2147483647
+          minimum: -2147483648
+          type: integer
+        weight:
+          default: 0.0
+          description: This attribute is a variable named:weight
+          example: 0.0
+          format: int32
+          type: number
+        gPO-256:
+          default: "3097"
+          example: "64"
+          format: string
+          type: string
+        hasClaws:
+          default: false
+          description: This attribute is a variable named:has claws
+          example: false
+          format: boolean
+          type: boolean
+        breed:
+          description: This attribute is a variable named:breed
+          format: string
+          type: string
+          example: null
+      required:
+      - gPO-256
+      - gPO-449
+      type: object
+      xml:
+        name: cat
+      x-swagger-router-model: ai.genpen.models.Cat
+

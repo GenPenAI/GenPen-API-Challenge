@@ -1,0 +1,11 @@
+{
+ "id":"1247488543",
+ "name":"comments",
+ "example":"",
+ "required":"false",
+ "description":"This attribute is a variable named comments",
+ "pattern":"",
+ "value":"",
+ "type":"string",
+ "format":"string"
+}

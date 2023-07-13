@@ -1,0 +1,13 @@
+{
+ "id":"517791908",
+ "name":"diameter",
+ "example":"0f",
+ "required":"false",
+ "description":"This attribute is a variable named diameter",
+ "minimum":"0",
+ "maximum":"10000000",
+ "pattern":"",
+ "value":"0f",
+ "type":"number",
+ "format":"float"
+}

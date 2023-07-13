@@ -1,0 +1,11 @@
+{
+ "id":"1877996978",
+ "name":"shape",
+ "example":"",
+ "required":"false",
+ "description":"This attribute is a variable named shape",
+ "pattern":"",
+ "value":"",
+ "type":"string",
+ "format":"string"
+}

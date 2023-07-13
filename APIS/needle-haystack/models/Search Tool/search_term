@@ -1,0 +1,11 @@
+{
+ "id":"1008957533",
+ "name":"search_term",
+ "example":"",
+ "required":"false",
+ "description":"This attribute is a variable named search_term",
+ "pattern":"",
+ "value":"",
+ "type":"string",
+ "format":"string"
+}

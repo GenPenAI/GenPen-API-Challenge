@@ -1,0 +1,13 @@
+{
+ "id":"1623628636",
+ "name":"questions_correct",
+ "example":"0",
+ "required":"false",
+ "description":"This attribute is a variable named questions_correct",
+ "minimum":"0",
+ "maximum":"10000000",
+ "pattern":"",
+ "value":"0",
+ "type":"integer",
+ "format":"integer"
+}

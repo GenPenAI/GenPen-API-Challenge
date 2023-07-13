@@ -1,0 +1,9 @@
+.openapi-generator-ignore
+README.md
+pom.xml
+src/gen/java/ai/genpen/api/RestApplication.java
+src/gen/java/ai/genpen/api/RestResourceRoot.java
+src/gen/java/ai/genpen/api/UserApi.java
+src/gen/java/ai/genpen/models/Error.java
+src/gen/java/ai/genpen/models/User.java
+src/main/openapi/openapi.yaml

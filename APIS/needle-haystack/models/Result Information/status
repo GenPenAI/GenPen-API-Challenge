@@ -1,0 +1,11 @@
+{
+ "id":"1730743977",
+ "name":"status",
+ "example":"",
+ "required":"false",
+ "description":"This attribute is a variable named status",
+ "pattern":"",
+ "value":"",
+ "type":"string",
+ "format":"string"
+}

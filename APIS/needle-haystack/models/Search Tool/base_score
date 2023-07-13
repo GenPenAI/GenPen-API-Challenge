@@ -1,0 +1,13 @@
+{
+ "id":"2112504287",
+ "name":"base_score",
+ "example":"0.0",
+ "required":"false",
+ "description":"This attribute is a variable named base_score",
+ "minimum":"0",
+ "maximum":"10000000",
+ "pattern":"",
+ "value":"0.0",
+ "type":"number",
+ "format":"double"
+}

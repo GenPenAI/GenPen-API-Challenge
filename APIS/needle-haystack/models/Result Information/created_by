@@ -1,0 +1,11 @@
+{
+ "id":"84952604",
+ "name":"created_by",
+ "example":"",
+ "required":"false",
+ "description":"This attribute is a variable named created_by",
+ "pattern":"",
+ "value":"",
+ "type":"string",
+ "format":"string"
+}

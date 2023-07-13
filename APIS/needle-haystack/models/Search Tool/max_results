@@ -1,0 +1,13 @@
+{
+ "id":"939505659",
+ "name":"max_results",
+ "example":"0",
+ "required":"false",
+ "description":"This attribute is a variable named max_results",
+ "minimum":"0",
+ "maximum":"10000000",
+ "pattern":"",
+ "value":"0",
+ "type":"integer",
+ "format":"integer"
+}
