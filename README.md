@@ -242,7 +242,7 @@ This project is licensed under the APACHE2.0 License - see the [LICENSE.md](LICE
 ## Links to Generated APIs
 
 `Week 1:`
-- Day 1: [Needle in a HayStack](Link)
+- Day 1: [Needle in a HayStack](https://github.com/GenPenAI/GenAPI/tree/main/APIS/needle-haystack)
 - Day 2: [Name](Link)
 - Day 3: [Name](Link)
 - Day 4: [Name](Link)
