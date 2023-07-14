@@ -36,6 +36,139 @@ To participate in the 100 Day Challenge, follow these steps:
 
 ## Challenge Roadmap
 
+## Links to Generated APIs
+
+**Week 1:**
+- Day 1: [Needle in a HayStack](https://github.com/GenPenAI/GenAPI/tree/main/APIS/needle-haystack) - An app that helps users find lost items by using AI and image recognition to locate objects within a cluttered space.
+- Day 2: [Recipe Recommender](https://github.com/GenPenAI/GenPen-API-Challenge/tree/main/APIS/recipe-recommender) - An app that suggests personalized recipes based on users' dietary preferences, restrictions, and available ingredients.
+- Day 3: [Fitness Tracker](Link) - An app that tracks users' workouts, monitors progress, and provides insights for a healthy lifestyle.
+- Day 4: [Pet Adoption Platform](Link) - An app that connects prospective pet owners with animal shelters and facilitates the adoption process.
+- Day 5: [Language Learning Assistant](Link) - An app that offers language courses, interactive lessons, and quizzes to help users learn a new language.
+- Day 6: [Event Planner](Link) - An app that assists in organizing and managing various types of events, from weddings to corporate conferences.
+- Day 7: [Meditation Guide](Link) - An app that provides guided meditation sessions, mindfulness exercises, and relaxation techniques.
+
+**Week 2:**
+- Day 8: [Virtual Wardrobe](Link) - An app that allows users to catalog their clothing items, create outfits, and get style recommendations.
+- Day 9: [Habit Tracker](Link) - An app that helps users build and track positive habits while providing reminders and motivation.
+- Day 10: [Local Tour Guide](Link) - An app that offers curated tours, recommendations, and information about popular local attractions.
+- Day 11: [Plant Care Assistant](Link) - An app that provides guidance and reminders for watering, fertilizing, and caring for indoor plants.
+- Day 12: [Freelancer Marketplace](Link) - An app that connects freelancers with clients seeking their services across various industries.
+- Day 13: [Budgeting Tool](Link) - An app that helps users manage their finances, track expenses, and set financial goals.
+- Day 14: [Home Workout Coach](Link) - An app that offers personalized workout routines and video demonstrations for exercising at home.
+
+**Week 3:**
+- Day 15: [Social Impact Network](Link) - An app that connects individuals and organizations passionate about social causes to collaborate and make a difference.
+- Day 16: [Language Exchange Community](Link) - An app that facilitates language exchange between users who want to practice speaking different languages.
+- Day 17: [Skill-Sharing Platform](Link) - An app that allows users to share their skills and knowledge with others through virtual classes or workshops.
+- Day 18: [Personal Safety Companion](Link) - An app that offers safety features, emergency contacts, and location sharing for personal security.
+- Day 19: [Travel Itinerary Planner](Link) - An app that assists users in creating customized travel itineraries, suggesting attractions, and booking accommodations.
+- Day 20: [Recipe-Sharing Community](Link) - An app that enables users to share and discover new recipes, create virtual cookbooks, and join cooking challenges.
+- Day 21: [Study Group Connector](Link) - An app that connects students with similar study interests to form virtual study groups and collaborate on projects.
+
+**Week 4:**
+- Day 22: [Home Maintenance Tracker](Link) - An app that helps homeowners keep track of home maintenance tasks, schedule reminders, and find local service providers.
+- Day 23: [Carpooling Service](Link) - An app that connects commuters traveling in the same direction, facilitating carpool arrangements and reducing traffic congestion.
+- Day 24: [Volunteer Matchmaking](Link) - An app that matches volunteers with organizations in need of their skills or time for community service.
+- Day 25: [Book Club Community](Link) - An app that brings book lovers together, facilitating discussions, recommending new reads, and organizing virtual book club meetings.
+- Day 26: [Virtual Mentorship Platform](Link) - An app that connects mentors with mentees, fostering professional development and knowledge sharing.
+- Day 27: [Virtual Garage Sale](Link) - An app that allows users to sell and buy preloved items within their local community.
+- Day 28: [Language Translation Tool](Link) - An app that provides real-time translation services for written or spoken content in multiple languages.
+
+**Week 5:**
+- Day 29: [Parking Space Finder](Link) - An app that helps users find available parking spaces in crowded areas and provides payment options.
+- Day 30: [Lost and Found Service](Link) - An app that connects people who have lost or found items, facilitating the return of lost belongings.
+- Day 31: [Music Collaboration Platform](Link) - An app that connects musicians and songwriters, allowing them to collaborate on music projects remotely.
+- Day 32: [Nutrition Tracker](Link) - An app that helps users track their daily nutritional intake, set dietary goals, and monitor their eating habits.
+- Day 33: [Freelance Photography Network](Link) - An app that connects photographers with clients looking for professional photography services.
+- Day 34: [Productivity Toolset](Link) - An app that offers features like to-do lists, time tracking, goal setting, and productivity insights.
+- Day 35: [Language Proficiency Test Prep](Link) - An app that provides practice tests and study materials for language proficiency exams like TOEFL or IELTS.
+
+**Week 6:**
+- Day 36: [Art Marketplace](Link) - An app that allows artists to showcase and sell their artwork directly to art enthusiasts.
+- Day 37: [Home Renovation Planner](Link) - An app that assists homeowners in planning and managing home renovation projects, tracking expenses, and connecting with contractors.
+- Day 38: [Sustainable Lifestyle Tracker](Link) - An app that helps users adopt and track sustainable habits in areas like energy consumption, waste reduction, and eco-friendly choices.
+- Day 39: [Wedding Planning Assistant](Link) - An app that guides couples through the wedding planning process, offering inspiration, vendor recommendations, and budget management tools.
+- Day 40: [Community Gardening Network](Link) - An app that connects individuals interested in gardening, helping them find community gardens, share tips, and exchange plant cuttings or seeds.
+- Day 41: [Homework Help Platform](Link) - An app that connects students with tutors or peers for assistance with homework, studying, and exam preparation.
+- Day 42: [Weather Forecasting Service](Link) - An app that provides accurate and detailed weather forecasts, severe weather alerts, and climate information.
+
+**Week 7:**
+- Day 43: [Remote Job Search Engine](Link) - An app that aggregates remote job listings from various sources, allowing users to search and apply for remote work opportunities.
+- Day 44: [Artistic Filters and Effects](Link) - An app that offers a wide range of filters, effects, and editing tools to enhance and transform photos or videos.
+- Day 45: [Custom Merchandise Creator](Link) - An app that enables users to design and create custom merchandise like t-shirts, mugs, or phone cases, and order them for delivery.
+- Day 46: [Healthy Recipe Meal Planner](Link) - An app that generates personalized meal plans based on dietary preferences, health goals, and available ingredients.
+- Day 47: [Social Fitness Challenge](Link) - An app that allows users to create fitness challenges, invite friends, track progress, and share achievements on social media.
+- Day 48: [Resume Builder](Link) - An app that helps users create professional resumes and cover letters, offering templates, writing tips, and job market insights.
+- Day 49: [Online Art Classes](Link) - An app that offers virtual art classes, allowing users to learn and practice various art techniques from professional artists.
+
+**Week 8:**
+- Day 50: [Interior Design Inspiration](Link) - An app that provides interior design ideas, tips, and virtual room visualization tools for decorating and renovating spaces.
+- Day 51: [Donation Tracker](Link) - An app that enables users to track their charitable donations, set donation goals, and discover causes or organizations to support.
+- Day 52: [Custom Workout Generator](Link) - An app that generates personalized workout routines based on users' fitness levels, preferences, and available equipment.
+- Day 53: [Allergy-Friendly Recipe Finder](Link) - An app that helps users discover recipes and meal ideas tailored to their specific food allergies or dietary restrictions.
+- Day 54: [Study Abroad Companion](Link) - An app that provides information, resources, and support for students planning to study abroad, including visa requirements, cultural tips, and destination guides.
+- Day 55: [Meditation Timer and Tracker](Link) - An app that offers customizable meditation timers, guided meditation sessions, and progress tracking for mindfulness practice.
+- Day 56: [Personal Finance Educator](Link) - An app that offers financial literacy courses, budgeting tools, and investment insights to help users improve their financial well-being.
+
+**Week 9:**
+- Day 57: [Virtual Reality Gaming Experience](Link) - An app that provides immersive virtual reality gaming experiences with a diverse range of game genres and interactive challenges.
+- Day 58: [Public Transportation Navigator](Link) - An app that helps users navigate public transportation systems, providing real-time schedules, route suggestions, and fare information.
+- Day 59: [Social Music Discovery](Link) - An app that allows users to discover and share music with friends, create playlists, and explore new genres or artists.
+- Day 60: [Language Pronunciation Trainer](Link) - An app that assists users in improving their pronunciation skills in different languages through interactive exercises and feedback.
+- Day 61: [Food Delivery Platform](Link) - An app that connects users with local restaurants and offers food delivery services with a variety of cuisines and menu options.
+- Day 62: [Remote Team Collaboration](Link) - An app that facilitates collaboration and communication among remote team members, offering chat, file sharing, and project management features.
+- Day 63: [Home Energy Efficiency Analyzer](Link) - An app that analyzes users' energy consumption patterns and provides recommendations for optimizing energy efficiency at home.
+
+**Week 10:**
+- Day 64: [Social Polling App](Link) - An app that allows users to create and participate in polls on various topics, share opinions, and view real-time poll results.
+- Day 65: [Car Maintenance Tracker](Link) - An app that helps users keep track of their vehicle maintenance history, schedule reminders for oil changes, inspections, and repairs.
+- Day 66: [Sustainable Fashion Marketplace](Link) - An app that connects sustainable fashion brands with conscious consumers, offering a curated selection of eco-friendly clothing and accessories.
+- Day 67: [Local Music Event Finder](Link) - An app that provides information and updates about local music events, concerts, and live performances happening in users' areas.
+- Day 68: [Virtual Therapy Platform](Link) - An app that connects users with licensed therapists for virtual therapy sessions, mental health support, and self-care resources.
+- Day 69: [DIY Home Improvement Guide](Link) - An app that offers step-by-step instructions, tutorials, and tips for DIY home improvement projects and repairs.
+- Day 70: [Carpool Karaoke Community](Link) - An app that allows users to record and share their carpool karaoke performances, join challenges, and connect with fellow singing enthusiasts.
+
+**Week 11:**
+- Day 71: [Sustainable Transportation Planner](Link) - An app that helps users plan their transportation routes, considering options like public transit, cycling, walking, and carpooling to reduce carbon footprint.
+- Day 72: [Sleep Tracker and Analyzer](Link) - An app that tracks users' sleep patterns, provides insights on sleep quality, and offers recommendations for improving sleep habits.
+- Day 73: [Podcast Discovery Platform](Link) - An app that curates and recommends podcasts based on users' interests, allowing them to discover new shows and episodes.
+- Day 74: [Freelance Writing Marketplace](Link) - An app that connects freelance writers with clients in need of content creation services, such as blog posts, articles, or copywriting.
+- Day 75: [Artistic Collaboration Network](Link) - An app that connects artists from various disciplines, enabling them to collaborate on multidisciplinary creative projects.
+- Day 76: [Digital Business Card Organizer](Link) - An app that helps users organize and manage their digital business cards, facilitating contact management and networking.
+- Day 77: [Virtual Job Fair Platform](Link) - An app that hosts virtual job fairs, allowing employers to showcase job openings and connect with potential candidates.
+
+**Week 12:**
+- Day 78: [Sustainable Transportation Incentive](Link) - An app that rewards users for choosing sustainable transportation options, offering incentives like discounts or loyalty points.
+- Day 79: [Social Activism Network](Link) - An app that connects activists, allowing them to organize campaigns, share resources, and participate in social justice initiatives.
+- Day 80: [College Application Planner](Link) - An app that guides students through the college application process, providing checklists, essay tips, and deadline reminders.
+- Day 81: [Live Language Translation Service](Link) - An app that provides live translation services for conversations or speeches in real-time, supporting multilingual communication.
+- Day 82: [DIY Craft Project Inspiration](Link) - An app that offers creative DIY craft ideas, tutorials, and supply recommendations for crafting enthusiasts.
+- Day 83: [Personal Journaling Companion](Link) - An app that provides a digital journaling experience, offering prompts, mood tracking, and privacy features for personal reflections.
+- Day 84: [Healthy Grocery Shopping Assistant](Link) - An app that helps users make healthy food choices at the grocery store, providing nutrition facts, ingredient analysis, and recipe suggestions.
+
+**Week 13:**
+- Day 85: [Sustainable Travel Planner](Link) - An app that promotes eco-friendly travel by suggesting sustainable accommodations, transportation options, and responsible tourism practices.
+- Day 86: [Virtual Interior Design Consultant](Link) - An app that allows users to virtually consult with interior design experts for personalized advice, recommendations, and room visualizations.
+- Day 87: [Personalized Book Recommendation Engine](Link) - An app that recommends books based on users' reading preferences, offering personalized reading lists and literary insights.
+- Day 88: [Campus Safety Companion](Link) - An app that provides safety features and resources for college students, including emergency contacts, campus maps, and safety tips.
+- Day 89: [Remote Language Tutoring](Link) - An app that connects language tutors with students seeking one-on-one language learning sessions through virtual video calls.
+- Day 90: [Virtual Reality Fitness Trainer](Link) - An app that offers immersive virtual reality workouts, combining fitness exercises with interactive gaming experiences.
+- Day 91: [Sustainable Packaging Finder](Link) - An app that helps users find brands and stores that use eco-friendly and sustainable packaging options for their products.
+
+**Week 14:**
+- Day 92: [Personal Development Planner](Link) - An app that assists users in setting and tracking personal development goals, providing resources, and offering motivational support.
+- Day 93: [DIY Home Spa Guide](Link) - An app that provides step-by-step instructions and tutorials for creating a spa-like experience at home, including skincare routines, relaxation techniques, and homemade beauty product recipes.
+- Day 94: [Local Farmers Market Directory](Link) - An app that helps users discover nearby farmers markets, providing information about vendors, opening hours, and available produce.
+- Day 95: [Memory Training Games](Link) - An app that offers a collection of memory-boosting games and exercises to enhance cognitive abilities and mental sharpness.
+- Day 96: [Donation-Based Fitness Classes](Link) - An app that connects fitness instructors with users who can attend virtual fitness classes by making a donation to a charitable cause.
+- Day 97: [Coding Bootcamp Companion](Link) - An app that provides coding tutorials, exercises, and resources to support individuals attending coding bootcamps.
+- Day 98: [Remote Language Interpretation Service](Link) - An app that offers real-time language interpretation services for virtual meetings, conferences, or events with multilingual participants.
+
+**Week 15:**
+- Day 99: [Virtual Home Design Showcase](Link) - An app that allows users to explore virtual home design showcases, featuring innovative interior design concepts and ideas.
+- Day 100: [Social Cookbook Platform](Link) - An app that allows users to create and share their favorite recipes, join cooking communities, and collaborate on virtual cookbooks.
+
+
 The following is a roadmap of the challenge, which spans over 100 days:
 
 ## 100 Day Challenge Roadmap: Generating REST APIs with AI
@@ -167,136 +300,4 @@ We would like to acknowledge and express our gratitude to the developers and res
 ## License
 
 This project is licensed under the APACHE2.0 License - see the [LICENSE.md](LICENSE.md) file for details.
-
-## Links to Generated APIs
-
-`Week 1:`
-- Day 1: [Needle in a HayStack](https://github.com/GenPenAI/GenAPI/tree/main/APIS/needle-haystack)
-- Day 2: [Recipe Recommender](https://github.com/GenPenAI/GenPen-API-Challenge/tree/main/APIS/recipe-recommender)
-- Day 3: [Name](Link)
-- Day 4: [Name](Link)
-- Day 5: [Name](Link)
-- Day 6: [Name](Link)
-- Day 7: [Name](Link)
-
-`Week 2:`
-- Day 8: [Name](Link)
-- Day 9: [Name](Link)
-- Day 10: [Name](Link)
-- Day 11: [Name](Link)
-- Day 12: [Name](Link)
-- Day 13: [Name](Link)
-- Day 14: [Name](Link)
-
-`Week 3:`
-- Day 15: [Name](Link)
-- Day 16: [Name](Link)
-- Day 17: [Name](Link)
-- Day 18: [Name](Link)
-- Day 19: [Name](Link)
-- Day 20: [Name](Link)
-- Day 21: [Name](Link)
-
-`Week 4:`
-- Day 22: [Name](Link)
-- Day 23: [Name](Link)
-- Day 24: [Name](Link)
-- Day 25: [Name](Link)
-- Day 26: [Name](Link)
-- Day 27: [Name](Link)
-- Day 28: [Name](Link)
-
-`Week 5:`
-- Day 29: [Name](Link)
-- Day 30: [Name](Link)
-- Day 31: [Name](Link)
-- Day 32: [Name](Link)
-- Day 33: [Name](Link)
-- Day 34: [Name](Link)
-- Day 35: [Name](Link)
-
-`Week 6:`
-- Day 36: [Name](Link)
-- Day 37: [Name](Link)
-- Day 38: [Name](Link)
-- Day 39: [Name](Link)
-- Day 40: [Name](Link)
-- Day 41: [Name](Link)
-- Day 42: [Name](Link)
-
-`Week 7:`
-- Day 43: [Name](Link)
-- Day 44: [Name](Link)
-- Day 45: [Name](Link)
-- Day 46: [Name](Link)
-- Day 47: [Name](Link)
-- Day 48: [Name](Link)
-- Day 49: [Name](Link)
-
-`Week 8:`
-- Day 50: [Name](Link)
-- Day 51: [Name](Link)
-- Day 52: [Name](Link)
-- Day 53: [Name](Link)
-- Day 54: [Name](Link)
-- Day 55: [Name](Link)
-- Day 56: [Name](Link)
-
-`Week 9:`
-- Day 57: [Name](Link)
-- Day 58: [Name](Link)
-- Day 59: [Name](Link)
-- Day 60: [Name](Link)
-- Day 61: [Name](Link)
-- Day 62: [Name](Link)
-- Day 63: [Name](Link)
-
-`Week 10:`
-- Day 64: [Name](Link)
-- Day 65: [Name](Link)
-- Day 66: [Name](Link)
-- Day 67: [Name](Link)
-- Day 68: [Name](Link)
-- Day 69: [Name](Link)
-- Day 70: [Name](Link)
-
-`Week 11:`
-- Day 71: [Name](Link)
-- Day 72: [Name](Link)
-- Day 73: [Name](Link)
-- Day 74: [Name](Link)
-- Day 75: [Name](Link)
-- Day 76: [Name](Link)
-- Day 77: [Name](Link)
-
-`Week 12:`
-- Day 78: [Name](Link)
-- Day 79: [Name](Link)
-- Day 80: [Name](Link)
-- Day 81: [Name](Link)
-- Day 82: [Name](Link)
-- Day 83: [Name](Link)
-- Day 84: [Name](Link)
-
-`Week 13:`
-- Day 85: [Name](Link)
-- Day 86: [Name](Link)
-- Day 87: [Name](Link)
-- Day 88: [Name](Link)
-- Day 89: [Name](Link)
-- Day 90: [Name](Link)
-- Day 91: [Name](Link)
-
-`Week 14:`
-- Day 92: [Name](Link)
-- Day 93: [Name](Link)
-- Day 94: [Name](Link)
-- Day 95: [Name](Link)
-- Day 96: [Name](Link)
-- Day 97: [Name](Link)
-- Day 98: [Name](Link)
-
-`Week 15:`
-- Day 99: [Name](Link)
-- Day 100: [Name](Link)
 
