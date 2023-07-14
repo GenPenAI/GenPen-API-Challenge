@@ -1,0 +1,13 @@
+{
+ "id":"2077458153",
+ "name":"recipe_id",
+ "example":"0",
+ "required":"false",
+ "description":"This attribute is a variable named recipe_id",
+ "minimum":"0",
+ "maximum":"10000000",
+ "pattern":"",
+ "value":"0",
+ "type":"integer",
+ "format":"integer"
+}

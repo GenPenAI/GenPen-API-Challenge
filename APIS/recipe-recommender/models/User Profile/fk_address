@@ -1,0 +1,13 @@
+{
+ "id":"507843065",
+ "name":"fk_address",
+ "example":"0L",
+ "required":"false",
+ "description":"This attribute is a variable named fk_address",
+ "minimum":"0",
+ "maximum":"10000000",
+ "pattern":"",
+ "value":"0L",
+ "type":"integer",
+ "format":"int64"
+}

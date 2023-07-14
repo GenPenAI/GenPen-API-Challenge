@@ -1,0 +1,11 @@
+{
+ "id":"2018116928",
+ "name":"vitamins",
+ "example":"",
+ "required":"false",
+ "description":"This attribute is a variable named vitamins",
+ "pattern":"",
+ "value":"",
+ "type":"string",
+ "format":"string"
+}

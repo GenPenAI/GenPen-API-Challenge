@@ -1,0 +1,11 @@
+{
+ "id":"84029105",
+ "name":"ingredient_category",
+ "example":"",
+ "required":"false",
+ "description":"This attribute is a variable named ingredient_category",
+ "pattern":"",
+ "value":"",
+ "type":"string",
+ "format":"string"
+}

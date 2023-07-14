@@ -1,0 +1,11 @@
+{
+ "id":"220553723",
+ "name":"preparation_time",
+ "example":"0",
+ "required":"false",
+ "description":"This attribute is a variable named preparation_time",
+ "pattern":"",
+ "value":"0",
+ "type":"integer",
+ "format":"integer"
+}

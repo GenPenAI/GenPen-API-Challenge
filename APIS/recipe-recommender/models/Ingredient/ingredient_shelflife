@@ -1,0 +1,13 @@
+{
+ "id":"1244798683",
+ "name":"ingredient_shelflife",
+ "example":"0",
+ "required":"false",
+ "description":"This attribute is a variable named ingredient_shelflife",
+ "minimum":"0",
+ "maximum":"10000000",
+ "pattern":"",
+ "value":"0",
+ "type":"integer",
+ "format":"integer"
+}

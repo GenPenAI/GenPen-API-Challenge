@@ -1,0 +1,11 @@
+{
+ "id":"500417571",
+ "name":"is_sustainable",
+ "example":"false",
+ "required":"false",
+ "description":"This attribute is a variable named is_sustainable",
+ "pattern":"",
+ "value":"false",
+ "type":"boolean",
+ "format":"boolean"
+}

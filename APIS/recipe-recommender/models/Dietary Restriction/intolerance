@@ -1,0 +1,11 @@
+{
+ "id":"1352054355",
+ "name":"intolerance",
+ "example":"false",
+ "required":"false",
+ "description":"This attribute is a variable named intolerance",
+ "pattern":"",
+ "value":"false",
+ "type":"boolean",
+ "format":"boolean"
+}

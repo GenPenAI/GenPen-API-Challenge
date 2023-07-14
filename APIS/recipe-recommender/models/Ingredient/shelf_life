@@ -1,0 +1,13 @@
+{
+ "id":"1626058724",
+ "name":"shelf_life",
+ "example":"0",
+ "required":"false",
+ "description":"This attribute is a variable named shelf_life",
+ "minimum":"0",
+ "maximum":"10000000",
+ "pattern":"",
+ "value":"0",
+ "type":"integer",
+ "format":"integer"
+}

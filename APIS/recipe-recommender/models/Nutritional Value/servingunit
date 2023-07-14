@@ -1,0 +1,11 @@
+{
+ "id":"1158633433",
+ "name":"servingunit",
+ "example":"",
+ "required":"false",
+ "description":"This attribute is a variable named servingunit",
+ "pattern":"",
+ "value":"",
+ "type":"string",
+ "format":"string"
+}

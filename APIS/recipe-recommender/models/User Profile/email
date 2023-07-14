@@ -1,0 +1,11 @@
+{
+ "id":"1330884921",
+ "name":"email",
+ "example":"",
+ "required":"false",
+ "description":"This attribute is a variable named email",
+ "pattern":"",
+ "value":"",
+ "type":"string",
+ "format":"string"
+}

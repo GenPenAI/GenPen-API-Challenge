@@ -1,0 +1,13 @@
+{
+ "id":"1268355679",
+ "name":"saturated_fat",
+ "example":"0.0",
+ "required":"false",
+ "description":"This attribute is a variable named saturated_fat",
+ "minimum":"0",
+ "maximum":"10000000",
+ "pattern":"",
+ "value":"0.0",
+ "type":"number",
+ "format":"double"
+}

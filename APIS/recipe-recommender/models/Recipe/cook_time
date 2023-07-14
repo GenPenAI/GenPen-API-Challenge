@@ -1,0 +1,13 @@
+{
+ "id":"1306430832",
+ "name":"cook_time",
+ "example":"0",
+ "required":"false",
+ "description":"This attribute is a variable named cook_time",
+ "minimum":"0",
+ "maximum":"10000000",
+ "pattern":"",
+ "value":"0",
+ "type":"integer",
+ "format":"integer"
+}

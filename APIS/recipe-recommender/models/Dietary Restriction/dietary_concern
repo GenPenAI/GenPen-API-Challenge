@@ -1,0 +1,11 @@
+{
+ "id":"262690723",
+ "name":"dietary_concern",
+ "example":"",
+ "required":"false",
+ "description":"This attribute is a variable named dietary_concern",
+ "pattern":"",
+ "value":"",
+ "type":"string",
+ "format":"string"
+}

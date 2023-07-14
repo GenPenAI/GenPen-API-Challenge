@@ -1,0 +1,11 @@
+{
+ "id":"705741287",
+ "name":"food",
+ "example":"",
+ "required":"false",
+ "description":"This attribute is a variable named food",
+ "pattern":"",
+ "value":"",
+ "type":"string",
+ "format":"string"
+}

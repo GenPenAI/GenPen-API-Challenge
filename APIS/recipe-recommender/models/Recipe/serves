@@ -1,0 +1,13 @@
+{
+ "id":"1997489855",
+ "name":"serves",
+ "example":"0",
+ "required":"false",
+ "description":"This attribute is a variable named serves",
+ "minimum":"0",
+ "maximum":"10000000",
+ "pattern":"",
+ "value":"0",
+ "type":"integer",
+ "format":"integer"
+}

@@ -1,0 +1,11 @@
+{
+ "id":"1199543902",
+ "name":"is_accomodated",
+ "example":"false",
+ "required":"false",
+ "description":"This attribute is a variable named is_accomodated",
+ "pattern":"",
+ "value":"false",
+ "type":"boolean",
+ "format":"boolean"
+}

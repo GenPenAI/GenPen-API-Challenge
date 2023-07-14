@@ -1,0 +1,11 @@
+{
+ "id":"894399550",
+ "name":"recipe_image",
+ "example":"",
+ "required":"false",
+ "description":"This attribute is a variable named recipe_image",
+ "pattern":"",
+ "value":"",
+ "type":"string",
+ "format":"string"
+}

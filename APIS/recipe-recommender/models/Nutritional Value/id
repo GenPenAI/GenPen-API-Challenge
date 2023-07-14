@@ -1,0 +1,13 @@
+{
+ "id":"1542942698",
+ "name":"id",
+ "example":"110",
+ "required":"false",
+ "description":"This is a GenPen.AI specific attribute",
+ "minimum":"0",
+ "maximum":"10000000",
+ "pattern":"",
+ "value":"4512",
+ "type":"integer",
+ "format":"integer"
+}

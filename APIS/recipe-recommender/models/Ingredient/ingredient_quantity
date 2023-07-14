@@ -1,0 +1,13 @@
+{
+ "id":"252786882",
+ "name":"ingredient_quantity",
+ "example":"0",
+ "required":"false",
+ "description":"This attribute is a variable named ingredient_quantity",
+ "minimum":"0",
+ "maximum":"10000000",
+ "pattern":"",
+ "value":"0",
+ "type":"integer",
+ "format":"integer"
+}

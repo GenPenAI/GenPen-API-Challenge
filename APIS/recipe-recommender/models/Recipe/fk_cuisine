@@ -1,0 +1,13 @@
+{
+ "id":"2115398263",
+ "name":"fk_cuisine",
+ "example":"0L",
+ "required":"false",
+ "description":"This attribute is a variable named fk_cuisine",
+ "minimum":"0",
+ "maximum":"10000000",
+ "pattern":"",
+ "value":"0L",
+ "type":"integer",
+ "format":"int64"
+}

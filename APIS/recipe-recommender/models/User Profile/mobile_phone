@@ -1,0 +1,13 @@
+{
+ "id":"1086509132",
+ "name":"mobile_phone",
+ "example":"0L",
+ "required":"false",
+ "description":"This attribute is a variable named mobile_phone",
+ "minimum":"0",
+ "maximum":"10000000",
+ "pattern":"",
+ "value":"0L",
+ "type":"integer",
+ "format":"int64"
+}

@@ -1,0 +1,13 @@
+{
+ "id":"31322191",
+ "name":"default_value",
+ "example":"0",
+ "required":"false",
+ "description":"This attribute is a variable named default_value",
+ "minimum":"0",
+ "maximum":"10000000",
+ "pattern":"",
+ "value":"0",
+ "type":"integer",
+ "format":"integer"
+}

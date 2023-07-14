@@ -1,0 +1,11 @@
+{
+ "id":"482028478",
+ "name":"unit_of_measurement",
+ "example":"",
+ "required":"false",
+ "description":"This attribute is a variable named unit_of_measurement",
+ "pattern":"",
+ "value":"",
+ "type":"string",
+ "format":"string"
+}

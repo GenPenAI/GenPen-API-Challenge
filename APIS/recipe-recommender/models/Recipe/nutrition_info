@@ -1,0 +1,11 @@
+{
+ "id":"766648949",
+ "name":"nutrition_info",
+ "example":"",
+ "required":"false",
+ "description":"This attribute is a variable named nutrition_info",
+ "pattern":"",
+ "value":"",
+ "type":"string",
+ "format":"string"
+}

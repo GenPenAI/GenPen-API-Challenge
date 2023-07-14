@@ -1,0 +1,11 @@
+{
+ "id":"1353022128",
+ "name":"cooking_time",
+ "example":"0",
+ "required":"false",
+ "description":"This attribute is a variable named cooking_time",
+ "pattern":"",
+ "value":"0",
+ "type":"integer",
+ "format":"integer"
+}

@@ -1,0 +1,11 @@
+{
+ "id":"902546138",
+ "name":"serves",
+ "example":"0",
+ "required":"false",
+ "description":"This attribute is a variable named serves",
+ "pattern":"",
+ "value":"0",
+ "type":"integer",
+ "format":"integer"
+}

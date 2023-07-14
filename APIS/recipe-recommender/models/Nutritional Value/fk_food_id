@@ -1,0 +1,13 @@
+{
+ "id":"1610563200",
+ "name":"fk_food_id",
+ "example":"0",
+ "required":"false",
+ "description":"This attribute is a variable named fk_food_id",
+ "minimum":"0",
+ "maximum":"10000000",
+ "pattern":"",
+ "value":"0",
+ "type":"integer",
+ "format":"integer"
+}

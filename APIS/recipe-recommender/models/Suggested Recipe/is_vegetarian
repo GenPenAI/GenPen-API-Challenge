@@ -1,0 +1,11 @@
+{
+ "id":"1532487842",
+ "name":"is_vegetarian",
+ "example":"false",
+ "required":"false",
+ "description":"This attribute is a variable named is_vegetarian",
+ "pattern":"",
+ "value":"false",
+ "type":"boolean",
+ "format":"boolean"
+}

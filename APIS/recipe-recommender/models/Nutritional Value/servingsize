@@ -1,0 +1,11 @@
+{
+ "id":"1443170159",
+ "name":"servingsize",
+ "example":"",
+ "required":"false",
+ "description":"This attribute is a variable named servingsize",
+ "pattern":"",
+ "value":"",
+ "type":"string",
+ "format":"string"
+}

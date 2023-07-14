@@ -1,0 +1,11 @@
+{
+ "id":"2083297125",
+ "name":"special_restrictions",
+ "example":"",
+ "required":"false",
+ "description":"This attribute is a variable named special_restrictions",
+ "pattern":"",
+ "value":"",
+ "type":"string",
+ "format":"string"
+}

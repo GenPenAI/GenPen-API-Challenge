@@ -1,0 +1,13 @@
+{
+ "id":"70385072",
+ "name":"servings_per_day",
+ "example":"0",
+ "required":"false",
+ "description":"This attribute is a variable named servings_per_day",
+ "minimum":"0",
+ "maximum":"10000000",
+ "pattern":"",
+ "value":"0",
+ "type":"integer",
+ "format":"integer"
+}

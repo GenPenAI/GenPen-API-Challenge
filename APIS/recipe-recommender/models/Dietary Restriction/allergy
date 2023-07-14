@@ -1,0 +1,11 @@
+{
+ "id":"1809543760",
+ "name":"allergy",
+ "example":"false",
+ "required":"false",
+ "description":"This attribute is a variable named allergy",
+ "pattern":"",
+ "value":"false",
+ "type":"boolean",
+ "format":"boolean"
+}

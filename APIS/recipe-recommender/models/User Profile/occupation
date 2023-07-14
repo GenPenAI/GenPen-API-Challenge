@@ -1,0 +1,11 @@
+{
+ "id":"1736233419",
+ "name":"occupation",
+ "example":"",
+ "required":"false",
+ "description":"This attribute is a variable named occupation",
+ "pattern":"",
+ "value":"",
+ "type":"string",
+ "format":"string"
+}

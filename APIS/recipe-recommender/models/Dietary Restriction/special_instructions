@@ -1,0 +1,11 @@
+{
+ "id":"1972057956",
+ "name":"special_instructions",
+ "example":"",
+ "required":"false",
+ "description":"This attribute is a variable named special_instructions",
+ "pattern":"",
+ "value":"",
+ "type":"string",
+ "format":"string"
+}

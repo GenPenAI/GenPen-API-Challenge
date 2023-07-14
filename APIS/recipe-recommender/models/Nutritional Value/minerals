@@ -1,0 +1,11 @@
+{
+ "id":"1330808099",
+ "name":"minerals",
+ "example":"",
+ "required":"false",
+ "description":"This attribute is a variable named minerals",
+ "pattern":"",
+ "value":"",
+ "type":"string",
+ "format":"string"
+}
