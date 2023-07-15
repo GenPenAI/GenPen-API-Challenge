@@ -1,0 +1,11 @@
+{
+ "id":"1182981831",
+ "name":"data_type",
+ "example":"",
+ "required":"false",
+ "description":"This attribute is a variable named data_type",
+ "pattern":"",
+ "value":"",
+ "type":"string",
+ "format":"string"
+}

@@ -1,0 +1,13 @@
+{
+ "id":"24394259",
+ "name":"fk_user_role_id",
+ "example":"0",
+ "required":"false",
+ "description":"This attribute is a variable named fk_user_role_id",
+ "minimum":"0",
+ "maximum":"10000000",
+ "pattern":"",
+ "value":"0",
+ "type":"integer",
+ "format":"integer"
+}

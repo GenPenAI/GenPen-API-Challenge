@@ -1,0 +1,13 @@
+{
+ "id":"530396551",
+ "name":"workout_id",
+ "example":"0L",
+ "required":"false",
+ "description":"This attribute is a variable named workout_id",
+ "minimum":"0",
+ "maximum":"10000000",
+ "pattern":"",
+ "value":"0L",
+ "type":"integer",
+ "format":"int64"
+}

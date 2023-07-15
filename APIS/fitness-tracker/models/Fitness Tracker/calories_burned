@@ -1,0 +1,11 @@
+{
+ "id":"1214843603",
+ "name":"calories_burned",
+ "example":"0",
+ "required":"false",
+ "description":"This attribute is a variable named calories_burned",
+ "pattern":"",
+ "value":"0",
+ "type":"integer",
+ "format":"integer"
+}

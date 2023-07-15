@@ -1,0 +1,13 @@
+{
+ "id":"791573828",
+ "name":"fk_application_id",
+ "example":"0",
+ "required":"false",
+ "description":"This attribute is a variable named fk_application_id",
+ "minimum":"0",
+ "maximum":"10000000",
+ "pattern":"",
+ "value":"0",
+ "type":"integer",
+ "format":"integer"
+}

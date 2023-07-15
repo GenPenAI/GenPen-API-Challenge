@@ -1,0 +1,11 @@
+{
+ "id":"2116444020",
+ "name":"end_time",
+ "example":"01-01-1968",
+ "required":"false",
+ "description":"This attribute is a variable named end_time",
+ "pattern":"",
+ "value":"01-01-1968",
+ "type":"string",
+ "format":"date"
+}

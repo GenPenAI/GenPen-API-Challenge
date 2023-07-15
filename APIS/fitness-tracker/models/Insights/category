@@ -1,0 +1,11 @@
+{
+ "id":"1208387000",
+ "name":"category",
+ "example":"",
+ "required":"false",
+ "description":"This attribute is a variable named category",
+ "pattern":"",
+ "value":"",
+ "type":"string",
+ "format":"string"
+}

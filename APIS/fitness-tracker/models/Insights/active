@@ -1,0 +1,11 @@
+{
+ "id":"543194431",
+ "name":"active",
+ "example":"false",
+ "required":"false",
+ "description":"This attribute is a variable named active",
+ "pattern":"",
+ "value":"false",
+ "type":"boolean",
+ "format":"boolean"
+}

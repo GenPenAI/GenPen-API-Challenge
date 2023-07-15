@@ -1,0 +1,11 @@
+{
+ "id":"909480728",
+ "name":"start_time",
+ "example":"01-01-1968",
+ "required":"false",
+ "description":"This attribute is a variable named start_time",
+ "pattern":"",
+ "value":"01-01-1968",
+ "type":"string",
+ "format":"date"
+}

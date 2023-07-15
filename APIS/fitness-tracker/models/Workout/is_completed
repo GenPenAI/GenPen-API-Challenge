@@ -1,0 +1,11 @@
+{
+ "id":"1580074237",
+ "name":"is_completed",
+ "example":"false",
+ "required":"false",
+ "description":"This attribute is a variable named is_completed",
+ "pattern":"",
+ "value":"false",
+ "type":"boolean",
+ "format":"boolean"
+}

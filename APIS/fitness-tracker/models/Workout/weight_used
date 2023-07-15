@@ -1,0 +1,13 @@
+{
+ "id":"814209962",
+ "name":"weight_used",
+ "example":"0.0",
+ "required":"false",
+ "description":"This attribute is a variable named weight_used",
+ "minimum":"0",
+ "maximum":"10000000",
+ "pattern":"",
+ "value":"0.0",
+ "type":"number",
+ "format":"double"
+}

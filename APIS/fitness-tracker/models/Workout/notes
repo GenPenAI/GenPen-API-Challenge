@@ -1,0 +1,11 @@
+{
+ "id":"789986273",
+ "name":"notes",
+ "example":"",
+ "required":"false",
+ "description":"This attribute is a variable named notes",
+ "pattern":"",
+ "value":"",
+ "type":"string",
+ "format":"string"
+}

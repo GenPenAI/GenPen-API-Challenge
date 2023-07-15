@@ -1,0 +1,11 @@
+{
+ "id":"117071261",
+ "name":"intensity",
+ "example":"0",
+ "required":"false",
+ "description":"This attribute is a variable named intensity",
+ "pattern":"",
+ "value":"0",
+ "type":"integer",
+ "format":"integer"
+}

@@ -1,0 +1,13 @@
+{
+ "id":"236472765",
+ "name":"progress_level",
+ "example":"0",
+ "required":"false",
+ "description":"This attribute is a variable named progress_level",
+ "minimum":"0",
+ "maximum":"10000000",
+ "pattern":"",
+ "value":"0",
+ "type":"integer",
+ "format":"integer"
+}

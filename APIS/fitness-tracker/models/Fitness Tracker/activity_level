@@ -1,0 +1,13 @@
+{
+ "id":"1874868507",
+ "name":"activity_level",
+ "example":"0",
+ "required":"false",
+ "description":"This attribute is a variable named activity_level",
+ "minimum":"0",
+ "maximum":"10000000",
+ "pattern":"",
+ "value":"0",
+ "type":"integer",
+ "format":"integer"
+}

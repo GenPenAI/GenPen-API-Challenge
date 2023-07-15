@@ -1,0 +1,11 @@
+{
+ "id":"1001958281",
+ "name":"priority",
+ "example":"0",
+ "required":"false",
+ "description":"This attribute is a variable named priority",
+ "pattern":"",
+ "value":"0",
+ "type":"integer",
+ "format":"integer"
+}

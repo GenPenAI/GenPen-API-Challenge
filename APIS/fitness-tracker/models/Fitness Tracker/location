@@ -1,0 +1,11 @@
+{
+ "id":"1876637787",
+ "name":"location",
+ "example":"",
+ "required":"false",
+ "description":"This attribute is a variable named location",
+ "pattern":"",
+ "value":"",
+ "type":"string",
+ "format":"string"
+}

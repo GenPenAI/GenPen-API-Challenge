@@ -1,0 +1,11 @@
+{
+ "id":"1329645437",
+ "name":"goal_met",
+ "example":"false",
+ "required":"false",
+ "description":"This attribute is a variable named goal_met",
+ "pattern":"",
+ "value":"false",
+ "type":"boolean",
+ "format":"boolean"
+}

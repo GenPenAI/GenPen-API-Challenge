@@ -1,0 +1,11 @@
+{
+ "id":"112238248",
+ "name":"initiated",
+ "example":"false",
+ "required":"false",
+ "description":"This attribute is a variable named initiated",
+ "pattern":"",
+ "value":"false",
+ "type":"boolean",
+ "format":"boolean"
+}

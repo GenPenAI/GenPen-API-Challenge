@@ -1,0 +1,11 @@
+{
+ "id":"754119358",
+ "name":"equipment_needed",
+ "example":"false",
+ "required":"false",
+ "description":"This attribute is a variable named equipment_needed",
+ "pattern":"",
+ "value":"false",
+ "type":"boolean",
+ "format":"boolean"
+}

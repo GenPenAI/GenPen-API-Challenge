@@ -1,0 +1,11 @@
+{
+ "id":"832082065",
+ "name":"intensity",
+ "example":"",
+ "required":"false",
+ "description":"This attribute is a variable named intensity",
+ "pattern":"",
+ "value":"",
+ "type":"string",
+ "format":"string"
+}

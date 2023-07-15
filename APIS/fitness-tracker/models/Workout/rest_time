@@ -1,0 +1,13 @@
+{
+ "id":"801457707",
+ "name":"rest_time",
+ "example":"0",
+ "required":"false",
+ "description":"This attribute is a variable named rest_time",
+ "minimum":"0",
+ "maximum":"10000000",
+ "pattern":"",
+ "value":"0",
+ "type":"integer",
+ "format":"integer"
+}

@@ -1,0 +1,13 @@
+{
+ "id":"1039317911",
+ "name":"time_of_day",
+ "example":"0",
+ "required":"false",
+ "description":"This attribute is a variable named time_of_day",
+ "minimum":"0",
+ "maximum":"10000000",
+ "pattern":"",
+ "value":"0",
+ "type":"integer",
+ "format":"integer"
+}

@@ -1,0 +1,11 @@
+{
+ "id":"1950256506",
+ "name":"creator_context",
+ "example":"",
+ "required":"false",
+ "description":"This attribute is a variable named creator_context",
+ "pattern":"",
+ "value":"",
+ "type":"string",
+ "format":"string"
+}

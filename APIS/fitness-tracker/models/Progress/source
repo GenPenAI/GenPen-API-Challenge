@@ -1,0 +1,11 @@
+{
+ "id":"1398166641",
+ "name":"source",
+ "example":"",
+ "required":"false",
+ "description":"This attribute is a variable named source",
+ "pattern":"",
+ "value":"",
+ "type":"string",
+ "format":"string"
+}

@@ -1,0 +1,13 @@
+{
+ "id":"1605864238",
+ "name":"fk_parent_id",
+ "example":"0",
+ "required":"false",
+ "description":"This attribute is a variable named fk_parent_id",
+ "minimum":"0",
+ "maximum":"10000000",
+ "pattern":"",
+ "value":"0",
+ "type":"integer",
+ "format":"integer"
+}

@@ -1,0 +1,11 @@
+{
+ "id":"1328823549",
+ "name":"fk_activity_type",
+ "example":"",
+ "required":"false",
+ "description":"This attribute is a variable named fk_activity_type",
+ "pattern":"",
+ "value":"",
+ "type":"string",
+ "format":"string"
+}

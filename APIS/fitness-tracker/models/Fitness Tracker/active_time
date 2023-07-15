@@ -1,0 +1,13 @@
+{
+ "id":"1149916377",
+ "name":"active_time",
+ "example":"0L",
+ "required":"false",
+ "description":"This attribute is a variable named active_time",
+ "minimum":"0",
+ "maximum":"10000000",
+ "pattern":"",
+ "value":"0L",
+ "type":"integer",
+ "format":"int64"
+}

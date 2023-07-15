@@ -1,0 +1,11 @@
+{
+ "id":"1039328520",
+ "name":"exercise_name",
+ "example":"",
+ "required":"false",
+ "description":"This attribute is a variable named exercise_name",
+ "pattern":"",
+ "value":"",
+ "type":"string",
+ "format":"string"
+}

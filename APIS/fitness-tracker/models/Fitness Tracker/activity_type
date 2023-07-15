@@ -1,0 +1,11 @@
+{
+ "id":"1827668199",
+ "name":"activity_type",
+ "example":"",
+ "required":"false",
+ "description":"This attribute is a variable named activity_type",
+ "pattern":"",
+ "value":"",
+ "type":"string",
+ "format":"string"
+}

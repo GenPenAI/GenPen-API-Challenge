@@ -1,0 +1,11 @@
+{
+ "id":"1935480783",
+ "name":"sucessful",
+ "example":"false",
+ "required":"false",
+ "description":"This attribute is a variable named sucessful",
+ "pattern":"",
+ "value":"false",
+ "type":"boolean",
+ "format":"boolean"
+}
