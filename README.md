@@ -41,7 +41,7 @@ To participate in the 100 Day Challenge, follow these steps:
 **Week 1:**
 - Day 1: [Needle in a HayStack](https://github.com/GenPenAI/GenAPI/tree/main/APIS/needle-haystack) - An app that helps users find lost items by using AI and image recognition to locate objects within a cluttered space.
 - Day 2: [Recipe Recommender](https://github.com/GenPenAI/GenPen-API-Challenge/tree/main/APIS/recipe-recommender) - An app that suggests personalized recipes based on users' dietary preferences, restrictions, and available ingredients.
-- Day 3: [Fitness Tracker](Link) - An app that tracks users' workouts, monitors progress, and provides insights for a healthy lifestyle.
+- Day 3: [Fitness Tracker](https://github.com/GenPenAI/GenPen-API-Challenge/tree/main/APIS/fitness-tracker) - An app that tracks users' workouts, monitors progress, and provides insights for a healthy lifestyle.
 - Day 4: [Pet Adoption Platform](Link) - An app that connects prospective pet owners with animal shelters and facilitates the adoption process.
 - Day 5: [Language Learning Assistant](Link) - An app that offers language courses, interactive lessons, and quizzes to help users learn a new language.
 - Day 6: [Event Planner](Link) - An app that assists in organizing and managing various types of events, from weddings to corporate conferences.
