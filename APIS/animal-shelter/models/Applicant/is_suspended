@@ -1,0 +1,11 @@
+{
+ "id":"1235583364",
+ "name":"is_suspended",
+ "example":"false",
+ "required":"false",
+ "description":"This attribute is a variable named is_suspended",
+ "pattern":"",
+ "value":"false",
+ "type":"boolean",
+ "format":"boolean"
+}

@@ -1,0 +1,11 @@
+{
+ "id":"803821472",
+ "name":"species",
+ "example":"",
+ "required":"false",
+ "description":"This attribute is a variable named species",
+ "pattern":"",
+ "value":"",
+ "type":"string",
+ "format":"string"
+}

@@ -1,0 +1,11 @@
+{
+ "id":"1961087861",
+ "name":"adoption_status",
+ "example":"",
+ "required":"false",
+ "description":"This attribute is a variable named adoption_status",
+ "pattern":"",
+ "value":"",
+ "type":"string",
+ "format":"string"
+}

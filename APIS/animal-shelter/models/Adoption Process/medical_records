@@ -1,0 +1,13 @@
+{
+ "id":"1254382447",
+ "name":"medical_records",
+ "example":"0f",
+ "required":"false",
+ "description":"This attribute is a variable named medical_records",
+ "minimum":"0",
+ "maximum":"10000000",
+ "pattern":"",
+ "value":"0f",
+ "type":"number",
+ "format":"float"
+}

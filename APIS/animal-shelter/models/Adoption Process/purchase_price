@@ -1,0 +1,13 @@
+{
+ "id":"793064938",
+ "name":"purchase_price",
+ "example":"0.0",
+ "required":"false",
+ "description":"This attribute is a variable named purchase_price",
+ "minimum":"0",
+ "maximum":"10000000",
+ "pattern":"",
+ "value":"0.0",
+ "type":"number",
+ "format":"double"
+}

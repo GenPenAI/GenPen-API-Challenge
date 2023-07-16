@@ -1,0 +1,11 @@
+{
+ "id":"305599794",
+ "name":"experience_level",
+ "example":"",
+ "required":"false",
+ "description":"This attribute is a variable named experience_level",
+ "pattern":"",
+ "value":"",
+ "type":"string",
+ "format":"string"
+}

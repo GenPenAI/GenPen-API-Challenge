@@ -1,0 +1,11 @@
+{
+ "id":"974158456",
+ "name":"phone_number",
+ "example":"",
+ "required":"false",
+ "description":"This attribute is a variable named phone_number",
+ "pattern":"",
+ "value":"",
+ "type":"string",
+ "format":"string"
+}

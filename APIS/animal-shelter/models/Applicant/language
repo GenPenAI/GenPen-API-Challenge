@@ -1,0 +1,11 @@
+{
+ "id":"63145720",
+ "name":"language",
+ "example":"",
+ "required":"false",
+ "description":"This attribute is a variable named language",
+ "pattern":"",
+ "value":"",
+ "type":"string",
+ "format":"string"
+}

@@ -1,0 +1,11 @@
+{
+ "id":"1427171257",
+ "name":"dietary_preferences",
+ "example":"",
+ "required":"false",
+ "description":"This attribute is a variable named dietary_preferences",
+ "pattern":"",
+ "value":"",
+ "type":"string",
+ "format":"string"
+}

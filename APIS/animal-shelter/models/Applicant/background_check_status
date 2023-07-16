@@ -1,0 +1,11 @@
+{
+ "id":"1536958799",
+ "name":"background_check_status",
+ "example":"false",
+ "required":"false",
+ "description":"This attribute is a variable named background_check_status",
+ "pattern":"",
+ "value":"false",
+ "type":"boolean",
+ "format":"boolean"
+}

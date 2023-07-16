@@ -1,0 +1,11 @@
+{
+ "id":"606892290",
+ "name":"educational_level",
+ "example":"",
+ "required":"false",
+ "description":"This attribute is a variable named educational_level",
+ "pattern":"",
+ "value":"",
+ "type":"string",
+ "format":"string"
+}

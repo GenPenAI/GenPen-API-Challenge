@@ -1,0 +1,11 @@
+{
+ "id":"1237503867",
+ "name":"health_checkup",
+ "example":"false",
+ "required":"false",
+ "description":"This attribute is a variable named health_checkup",
+ "pattern":"",
+ "value":"false",
+ "type":"boolean",
+ "format":"boolean"
+}

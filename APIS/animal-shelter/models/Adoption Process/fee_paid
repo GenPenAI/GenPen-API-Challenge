@@ -1,0 +1,11 @@
+{
+ "id":"575833330",
+ "name":"fee_paid",
+ "example":"false",
+ "required":"false",
+ "description":"This attribute is a variable named fee_paid",
+ "pattern":"",
+ "value":"false",
+ "type":"boolean",
+ "format":"boolean"
+}

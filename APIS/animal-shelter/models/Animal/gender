@@ -1,0 +1,11 @@
+{
+ "id":"632019142",
+ "name":"gender",
+ "example":"",
+ "required":"false",
+ "description":"This attribute is a variable named gender",
+ "pattern":"",
+ "value":"",
+ "type":"string",
+ "format":"string"
+}

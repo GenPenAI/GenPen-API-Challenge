@@ -1,0 +1,11 @@
+{
+ "id":"1252799307",
+ "name":"contract_signed",
+ "example":"false",
+ "required":"false",
+ "description":"This attribute is a variable named contract_signed",
+ "pattern":"",
+ "value":"false",
+ "type":"boolean",
+ "format":"boolean"
+}

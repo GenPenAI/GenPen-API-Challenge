@@ -1,0 +1,11 @@
+{
+ "id":"368580006",
+ "name":"enforceable",
+ "example":"false",
+ "required":"false",
+ "description":"This attribute is a variable named enforceable",
+ "pattern":"",
+ "value":"false",
+ "type":"boolean",
+ "format":"boolean"
+}

@@ -1,0 +1,11 @@
+{
+ "id":"1344001221",
+ "name":"approved",
+ "example":"false",
+ "required":"false",
+ "description":"This attribute is a variable named approved",
+ "pattern":"",
+ "value":"false",
+ "type":"boolean",
+ "format":"boolean"
+}

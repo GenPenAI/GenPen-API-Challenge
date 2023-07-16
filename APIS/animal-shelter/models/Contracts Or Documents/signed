@@ -1,0 +1,11 @@
+{
+ "id":"2120744302",
+ "name":"signed",
+ "example":"false",
+ "required":"false",
+ "description":"This attribute is a variable named signed",
+ "pattern":"",
+ "value":"false",
+ "type":"boolean",
+ "format":"boolean"
+}

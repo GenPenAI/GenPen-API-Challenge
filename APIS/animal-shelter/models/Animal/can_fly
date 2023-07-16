@@ -1,0 +1,11 @@
+{
+ "id":"1665662877",
+ "name":"can_fly",
+ "example":"false",
+ "required":"false",
+ "description":"This attribute is a variable named can_fly",
+ "pattern":"",
+ "value":"false",
+ "type":"boolean",
+ "format":"boolean"
+}

@@ -1,0 +1,11 @@
+{
+ "id":"1336537975",
+ "name":"last_name",
+ "example":"",
+ "required":"false",
+ "description":"This attribute is a variable named last_name",
+ "pattern":"",
+ "value":"",
+ "type":"string",
+ "format":"string"
+}

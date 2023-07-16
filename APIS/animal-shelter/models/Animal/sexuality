@@ -1,0 +1,11 @@
+{
+ "id":"1713973372",
+ "name":"sexuality",
+ "example":"false",
+ "required":"false",
+ "description":"This attribute is a variable named sexuality",
+ "pattern":"",
+ "value":"false",
+ "type":"boolean",
+ "format":"boolean"
+}

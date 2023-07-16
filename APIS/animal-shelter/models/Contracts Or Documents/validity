@@ -1,0 +1,11 @@
+{
+ "id":"1288056435",
+ "name":"validity",
+ "example":"false",
+ "required":"false",
+ "description":"This attribute is a variable named validity",
+ "pattern":"",
+ "value":"false",
+ "type":"boolean",
+ "format":"boolean"
+}

@@ -1,0 +1,11 @@
+{
+ "id":"497088095",
+ "name":"document_name",
+ "example":"",
+ "required":"false",
+ "description":"This attribute is a variable named document_name",
+ "pattern":"",
+ "value":"",
+ "type":"string",
+ "format":"string"
+}

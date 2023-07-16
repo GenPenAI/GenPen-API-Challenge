@@ -1,0 +1,11 @@
+{
+ "id":"1207660999",
+ "name":"animal_type",
+ "example":"",
+ "required":"false",
+ "description":"This attribute is a variable named animal_type",
+ "pattern":"",
+ "value":"",
+ "type":"string",
+ "format":"string"
+}

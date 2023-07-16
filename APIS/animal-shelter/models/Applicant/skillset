@@ -1,0 +1,11 @@
+{
+ "id":"178049605",
+ "name":"skillset",
+ "example":"",
+ "required":"false",
+ "description":"This attribute is a variable named skillset",
+ "pattern":"",
+ "value":"",
+ "type":"string",
+ "format":"string"
+}

@@ -1,0 +1,11 @@
+{
+ "id":"490309094",
+ "name":"vaccinated",
+ "example":"false",
+ "required":"false",
+ "description":"This attribute is a variable named vaccinated",
+ "pattern":"",
+ "value":"false",
+ "type":"boolean",
+ "format":"boolean"
+}

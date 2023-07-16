@@ -1,0 +1,13 @@
+{
+ "id":"583136412",
+ "name":"archived",
+ "example":"0L",
+ "required":"false",
+ "description":"This attribute is a variable named archived",
+ "minimum":"0",
+ "maximum":"10000000",
+ "pattern":"",
+ "value":"0L",
+ "type":"integer",
+ "format":"int64"
+}

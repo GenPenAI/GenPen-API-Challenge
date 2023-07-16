@@ -1,0 +1,11 @@
+{
+ "id":"564147958",
+ "name":"vet_visit",
+ "example":"false",
+ "required":"false",
+ "description":"This attribute is a variable named vet_visit",
+ "pattern":"",
+ "value":"false",
+ "type":"boolean",
+ "format":"boolean"
+}

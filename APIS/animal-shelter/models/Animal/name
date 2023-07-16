@@ -1,0 +1,11 @@
+{
+ "id":"-1663691034",
+ "name":"name",
+ "example":"29",
+ "required":"false",
+ "description":"This is a GenPen.AI specific attribute",
+ "pattern":"",
+ "value":"8497",
+ "type":"string",
+ "format":"string"
+}

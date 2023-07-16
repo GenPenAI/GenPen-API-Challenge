@@ -1,0 +1,11 @@
+{
+ "id":"107375356",
+ "name":"temperament",
+ "example":"",
+ "required":"false",
+ "description":"This attribute is a variable named temperament",
+ "pattern":"",
+ "value":"",
+ "type":"string",
+ "format":"string"
+}

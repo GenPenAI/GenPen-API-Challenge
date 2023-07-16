@@ -1,0 +1,11 @@
+{
+ "id":"1589667524",
+ "name":"purpose",
+ "example":"",
+ "required":"false",
+ "description":"This attribute is a variable named purpose",
+ "pattern":"",
+ "value":"",
+ "type":"string",
+ "format":"string"
+}

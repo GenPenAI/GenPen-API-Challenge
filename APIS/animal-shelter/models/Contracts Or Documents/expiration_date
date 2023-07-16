@@ -1,0 +1,11 @@
+{
+ "id":"1266651390",
+ "name":"expiration_date",
+ "example":"01-01-1968",
+ "required":"false",
+ "description":"This attribute is a variable named expiration_date",
+ "pattern":"",
+ "value":"01-01-1968",
+ "type":"string",
+ "format":"date"
+}

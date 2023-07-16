@@ -1,0 +1,11 @@
+{
+ "id":"1523106994",
+ "name":"citizenship",
+ "example":"",
+ "required":"false",
+ "description":"This attribute is a variable named citizenship",
+ "pattern":"",
+ "value":"",
+ "type":"string",
+ "format":"string"
+}

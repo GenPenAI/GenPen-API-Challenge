@@ -1,0 +1,11 @@
+{
+ "id":"448683247",
+ "name":"birthdate",
+ "example":"01-01-1968",
+ "required":"false",
+ "description":"This attribute is a variable named birthdate",
+ "pattern":"",
+ "value":"01-01-1968",
+ "type":"string",
+ "format":"date"
+}

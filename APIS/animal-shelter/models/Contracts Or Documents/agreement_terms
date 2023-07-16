@@ -1,0 +1,11 @@
+{
+ "id":"26914584",
+ "name":"agreement_terms",
+ "example":"false",
+ "required":"false",
+ "description":"This attribute is a variable named agreement_terms",
+ "pattern":"",
+ "value":"false",
+ "type":"boolean",
+ "format":"boolean"
+}

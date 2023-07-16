@@ -1,0 +1,11 @@
+{
+ "id":"1157054468",
+ "name":"cancelled",
+ "example":"0",
+ "required":"false",
+ "description":"This attribute is a variable named cancelled",
+ "pattern":"",
+ "value":"0",
+ "type":"integer",
+ "format":"integer"
+}
