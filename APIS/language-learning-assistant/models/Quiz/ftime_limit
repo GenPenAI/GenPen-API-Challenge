@@ -1,0 +1,11 @@
+{
+ "id":"13503886",
+ "name":"ftime_limit",
+ "example":"0",
+ "required":"false",
+ "description":"This attribute is a variable named ftime_limit",
+ "pattern":"",
+ "value":"0",
+ "type":"integer",
+ "format":"integer"
+}

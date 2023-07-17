@@ -1,0 +1,13 @@
+{
+ "id":"1294109441",
+ "name":"author_id",
+ "example":"0L",
+ "required":"false",
+ "description":"This attribute is a variable named author_id",
+ "minimum":"0",
+ "maximum":"10000000",
+ "pattern":"",
+ "value":"0L",
+ "type":"integer",
+ "format":"int64"
+}

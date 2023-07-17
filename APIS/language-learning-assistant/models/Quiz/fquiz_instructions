@@ -1,0 +1,11 @@
+{
+ "id":"953479526",
+ "name":"fquiz_instructions",
+ "example":"",
+ "required":"false",
+ "description":"This attribute is a variable named fquiz_instructions",
+ "pattern":"",
+ "value":"",
+ "type":"string",
+ "format":"string"
+}

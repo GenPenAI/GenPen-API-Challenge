@@ -1,0 +1,11 @@
+{
+ "id":"2063378245",
+ "name":"course_name",
+ "example":"",
+ "required":"false",
+ "description":"This attribute is a variable named course_name",
+ "pattern":"",
+ "value":"",
+ "type":"string",
+ "format":"string"
+}

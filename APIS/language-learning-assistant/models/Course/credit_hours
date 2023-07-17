@@ -1,0 +1,13 @@
+{
+ "id":"706599377",
+ "name":"credit_hours",
+ "example":"0",
+ "required":"false",
+ "description":"This attribute is a variable named credit_hours",
+ "minimum":"0",
+ "maximum":"10000000",
+ "pattern":"",
+ "value":"0",
+ "type":"integer",
+ "format":"integer"
+}

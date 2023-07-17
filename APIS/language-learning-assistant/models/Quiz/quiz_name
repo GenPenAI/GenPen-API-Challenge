@@ -1,0 +1,11 @@
+{
+ "id":"963958011",
+ "name":"quiz_name",
+ "example":"",
+ "required":"false",
+ "description":"This attribute is a variable named quiz_name",
+ "pattern":"",
+ "value":"",
+ "type":"string",
+ "format":"string"
+}

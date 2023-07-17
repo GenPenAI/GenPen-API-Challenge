@@ -1,0 +1,11 @@
+{
+ "id":"383001467",
+ "name":"timeslots",
+ "example":"",
+ "required":"false",
+ "description":"This attribute is a variable named timeslots",
+ "pattern":"",
+ "value":"",
+ "type":"string",
+ "format":"string"
+}

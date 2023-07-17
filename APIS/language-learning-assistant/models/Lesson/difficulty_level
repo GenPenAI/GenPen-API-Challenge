@@ -1,0 +1,13 @@
+{
+ "id":"2089382754",
+ "name":"difficulty_level",
+ "example":"0",
+ "required":"false",
+ "description":"This attribute is a variable named difficulty_level",
+ "minimum":"0",
+ "maximum":"10000000",
+ "pattern":"",
+ "value":"0",
+ "type":"integer",
+ "format":"integer"
+}

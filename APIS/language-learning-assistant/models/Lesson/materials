@@ -1,0 +1,11 @@
+{
+ "id":"1981695095",
+ "name":"materials",
+ "example":"",
+ "required":"false",
+ "description":"This attribute is a variable named materials",
+ "pattern":"",
+ "value":"",
+ "type":"string",
+ "format":"string"
+}

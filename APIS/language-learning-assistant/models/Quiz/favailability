@@ -1,0 +1,11 @@
+{
+ "id":"1264894387",
+ "name":"favailability",
+ "example":"false",
+ "required":"false",
+ "description":"This attribute is a variable named favailability",
+ "pattern":"",
+ "value":"false",
+ "type":"boolean",
+ "format":"boolean"
+}

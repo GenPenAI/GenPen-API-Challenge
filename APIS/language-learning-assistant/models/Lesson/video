@@ -1,0 +1,11 @@
+{
+ "id":"511200164",
+ "name":"video",
+ "example":"false",
+ "required":"false",
+ "description":"This attribute is a variable named video",
+ "pattern":"",
+ "value":"false",
+ "type":"boolean",
+ "format":"boolean"
+}

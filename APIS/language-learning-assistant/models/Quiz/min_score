@@ -1,0 +1,13 @@
+{
+ "id":"300043950",
+ "name":"min_score",
+ "example":"0",
+ "required":"false",
+ "description":"This attribute is a variable named min_score",
+ "minimum":"0",
+ "maximum":"10000000",
+ "pattern":"",
+ "value":"0",
+ "type":"integer",
+ "format":"integer"
+}

@@ -1,0 +1,13 @@
+{
+ "id":"1980168438",
+ "name":"max_score",
+ "example":"0",
+ "required":"false",
+ "description":"This attribute is a variable named max_score",
+ "minimum":"0",
+ "maximum":"10000000",
+ "pattern":"",
+ "value":"0",
+ "type":"integer",
+ "format":"integer"
+}

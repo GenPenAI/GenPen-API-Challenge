@@ -1,0 +1,11 @@
+{
+ "id":"555036752",
+ "name":"practical_tasks",
+ "example":"",
+ "required":"false",
+ "description":"This attribute is a variable named practical_tasks",
+ "pattern":"",
+ "value":"",
+ "type":"string",
+ "format":"string"
+}

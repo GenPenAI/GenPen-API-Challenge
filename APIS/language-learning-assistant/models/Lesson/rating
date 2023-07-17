@@ -1,0 +1,11 @@
+{
+ "id":"1462004341",
+ "name":"rating",
+ "example":"0",
+ "required":"false",
+ "description":"This attribute is a variable named rating",
+ "pattern":"",
+ "value":"0",
+ "type":"integer",
+ "format":"integer"
+}

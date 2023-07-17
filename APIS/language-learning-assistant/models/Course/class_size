@@ -1,0 +1,11 @@
+{
+ "id":"865430630",
+ "name":"class_size",
+ "example":"0",
+ "required":"false",
+ "description":"This attribute is a variable named class_size",
+ "pattern":"",
+ "value":"0",
+ "type":"integer",
+ "format":"integer"
+}

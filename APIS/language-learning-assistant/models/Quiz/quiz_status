@@ -1,0 +1,11 @@
+{
+ "id":"1643170204",
+ "name":"quiz_status",
+ "example":"false",
+ "required":"false",
+ "description":"This attribute is a variable named quiz_status",
+ "pattern":"",
+ "value":"false",
+ "type":"boolean",
+ "format":"boolean"
+}

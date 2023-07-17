@@ -1,0 +1,13 @@
+{
+ "id":"1758186369",
+ "name":"length_in_minutes",
+ "example":"0",
+ "required":"false",
+ "description":"This attribute is a variable named length_in_minutes",
+ "minimum":"0",
+ "maximum":"10000000",
+ "pattern":"",
+ "value":"0",
+ "type":"integer",
+ "format":"integer"
+}

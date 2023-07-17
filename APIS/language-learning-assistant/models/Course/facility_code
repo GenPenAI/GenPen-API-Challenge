@@ -1,0 +1,11 @@
+{
+ "id":"1724388616",
+ "name":"facility_code",
+ "example":"",
+ "required":"false",
+ "description":"This attribute is a variable named facility_code",
+ "pattern":"",
+ "value":"",
+ "type":"string",
+ "format":"string"
+}

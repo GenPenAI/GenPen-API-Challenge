@@ -1,0 +1,11 @@
+{
+ "id":"1277813220",
+ "name":"frandomization",
+ "example":"false",
+ "required":"false",
+ "description":"This attribute is a variable named frandomization",
+ "pattern":"",
+ "value":"false",
+ "type":"boolean",
+ "format":"boolean"
+}

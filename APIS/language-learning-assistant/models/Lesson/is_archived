@@ -1,0 +1,11 @@
+{
+ "id":"552606865",
+ "name":"is_archived",
+ "example":"false",
+ "required":"false",
+ "description":"This attribute is a variable named is_archived",
+ "pattern":"",
+ "value":"false",
+ "type":"boolean",
+ "format":"boolean"
+}

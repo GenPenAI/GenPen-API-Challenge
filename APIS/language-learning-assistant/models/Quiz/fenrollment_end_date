@@ -1,0 +1,11 @@
+{
+ "id":"1551347924",
+ "name":"fenrollment_end_date",
+ "example":"01-01-1968",
+ "required":"false",
+ "description":"This attribute is a variable named fenrollment_end_date",
+ "pattern":"",
+ "value":"01-01-1968",
+ "type":"string",
+ "format":"date"
+}

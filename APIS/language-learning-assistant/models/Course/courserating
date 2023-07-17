@@ -1,0 +1,13 @@
+{
+ "id":"2016666919",
+ "name":"courserating",
+ "example":"0f",
+ "required":"false",
+ "description":"This attribute is a variable named courserating",
+ "minimum":"0",
+ "maximum":"10000000",
+ "pattern":"",
+ "value":"0f",
+ "type":"number",
+ "format":"float"
+}
