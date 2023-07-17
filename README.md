@@ -43,7 +43,7 @@ To participate in the 100 Day Challenge, follow these steps:
 - Day 2: [Recipe Recommender](https://github.com/GenPenAI/GenPen-API-Challenge/tree/main/APIS/recipe-recommender) - An app that suggests personalized recipes based on users' dietary preferences, restrictions, and available ingredients.
 - Day 3: [Fitness Tracker](https://github.com/GenPenAI/GenPen-API-Challenge/tree/main/APIS/fitness-tracker) - An app that tracks users' workouts, monitors progress, and provides insights for a healthy lifestyle.
 - Day 4: [Pet Adoption Platform](https://github.com/GenPenAI/GenPen-API-Challenge/tree/main/APIS/animal-shelter) - An app that connects prospective pet owners with animal shelters and facilitates the adoption process.
-- Day 5: [Language Learning Assistant](Link) - An app that offers language courses, interactive lessons, and quizzes to help users learn a new language.
+- Day 5: [Language Learning Assistant](https://github.com/GenPenAI/GenPen-API-Challenge/tree/main/APIS/language-learning-assistant) - An app that offers language courses, interactive lessons, and quizzes to help users learn a new language.
 - Day 6: [Event Planner](Link) - An app that assists in organizing and managing various types of events, from weddings to corporate conferences.
 - Day 7: [Meditation Guide](Link) - An app that provides guided meditation sessions, mindfulness exercises, and relaxation techniques.
 
